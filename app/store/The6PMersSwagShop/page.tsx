@@ -209,7 +209,7 @@ export default function Creators() {
                 <h4
                   className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
                 >
-                  It's 6PM Somewhere Black T-shirt
+                  It&apos;s 6PM Somewhere Black T-shirt
                 </h4>
               </CardHeader>
               <Image
