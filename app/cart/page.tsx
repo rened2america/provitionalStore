@@ -25,6 +25,8 @@ const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function Creators() {
   const { products } = useStore((state) => {
+    //@ts-ignore
+
     return { products: state.products };
   });
   return (

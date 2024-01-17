@@ -10,7 +10,10 @@ const useStore = create(
         quantity: number;
         size: string;
         url: string;
-      }) => set((state) => ({ products: [...state.products, { ...product }] })),
+      }) =>
+        set((state: any) => ({
+          products: [...state.products, { ...product }],
+        })),
       //   decrement: () => set((state) => ({ counter: state.counter - 1 })),
     }),
     { name: "cart-storage" }

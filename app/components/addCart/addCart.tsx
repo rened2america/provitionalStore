@@ -5,6 +5,7 @@ import useStore from "@/app/state/store";
 
 export const AddCart = ({ product }: { product: any }) => {
   const { addProduct, products } = useStore((state) => {
+    //@ts-ignore
     return { addProduct: state.addProduct, products: state.products };
   });
   console.log(products);

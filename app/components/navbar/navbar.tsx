@@ -14,6 +14,7 @@ import useStore from "@/app/state/store";
 
 export const NavbarHeader = () => {
   const { products } = useStore((state) => {
+    //@ts-ignore
     return { products: state.products };
   });
   console.log(products);

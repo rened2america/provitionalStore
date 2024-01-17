@@ -126,6 +126,7 @@ export default function One() {
               <CheckboxGroup
                 label="Select size"
                 value={selected}
+                //@ts-ignore
                 onChange={(data) => setSelected([data[1]])}
                 classNames={{
                   base: "w-full",
