@@ -38,7 +38,7 @@ export default function Creators() {
       <NavbarHeader />
 
       <div className="w-screen grid justify-center">
-        {products.map((product) => {
+        {products.map((product: any) => {
           return (
             <>
               <Card>
