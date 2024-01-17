@@ -11,6 +11,8 @@ import {
 } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
+import { FacebookIcon } from "@/app/components/icons/facebookIcon";
+import { InstagramIcon } from "@/app/components/icons/InstagramIcon";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -135,17 +137,37 @@ export default function Creators() {
             Welcome to our Merch shop, where every 6PM enthusiast will find
             their perfect match in our club collection tees!{" "}
           </p>
-          <p
-            className={inter.className}
+
+          <div
             style={{
-              fontWeight: "400",
-              fontSize: "0.9rem",
-              lineHeight: "1.8rem",
-              color: "#a3a3a3",
+              // fontWeight: "400",
+              fontSize: "1.5rem",
+              // lineHeight: "1.8rem",
+              color: "white",
+              height: "100px",
+              width: "24px",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "8px",
             }}
           >
-            Shirt
-          </p>
+            <div
+              style={{
+                height: "100px",
+                width: "24px",
+              }}
+            >
+              <InstagramIcon />
+            </div>
+            <div
+              style={{
+                height: "100px",
+                width: "24px",
+              }}
+            >
+              <FacebookIcon />
+            </div>
+          </div>
         </div>
       </div>
       <section

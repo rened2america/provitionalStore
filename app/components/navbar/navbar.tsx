@@ -22,6 +22,7 @@ export const NavbarHeader = () => {
     <Navbar
       style={{
         backgroundColor: "hsla(0,0%,9%,.7)",
+        fontFamily: "'Inter',sans-serif",
       }}
     >
       <NavbarBrand>
