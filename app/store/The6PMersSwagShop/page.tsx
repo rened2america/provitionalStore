@@ -196,7 +196,7 @@ export default function Creators() {
                 removeWrapper
                 alt="Card background"
                 className="z-0 w-full h-full object-cover"
-                src="/product1.jpg"
+                src="/product_one.jpg"
               />
             </Link>
           </Card>
@@ -218,7 +218,7 @@ export default function Creators() {
                 removeWrapper
                 alt="Card background"
                 className="z-0 w-full h-full object-cover"
-                src="/product2.jpg"
+                src="/product_two.jpg"
               />
             </Link>
           </Card>
@@ -238,7 +238,7 @@ export default function Creators() {
                 removeWrapper
                 alt="Card background"
                 className="z-0 w-full h-full object-cover"
-                src="/product3.jpg"
+                src="/product_three.jpg"
               />
             </Link>
           </Card>

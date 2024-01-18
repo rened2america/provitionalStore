@@ -29,7 +29,7 @@ export default function One() {
         quantity: quantity,
         size: "M",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "l") {
@@ -38,7 +38,7 @@ export default function One() {
         quantity: quantity,
         size: "L",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "xl") {
@@ -47,7 +47,7 @@ export default function One() {
         quantity: quantity,
         size: "XL",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "2xl") {
@@ -56,7 +56,7 @@ export default function One() {
         quantity: quantity,
         size: "2XL",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "3xl") {
@@ -65,7 +65,7 @@ export default function One() {
         quantity: quantity,
         size: "3XL",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "4xl") {
@@ -74,7 +74,7 @@ export default function One() {
         quantity: quantity,
         size: "4XL",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     if (selected[0] === "5xl") {
@@ -83,7 +83,7 @@ export default function One() {
         quantity: quantity,
         size: "5XL",
         priceId: "dasdas",
-        url: "/product1.jpg",
+        url: "/product_one.jpg",
       };
     }
     return {
@@ -91,7 +91,7 @@ export default function One() {
       quantity: quantity,
       size: "S",
       priceId: "dasdas",
-      url: "/product1.jpg",
+      url: "/product_one.jpg",
     };
   };
 
@@ -112,7 +112,7 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/product1.jpg" width="350" />
+          <Image src="/product_one.jpg" width="350" />
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">Re Social White T-shirt</div>
