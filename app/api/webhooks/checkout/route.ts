@@ -346,10 +346,11 @@ export async function POST(req: Request) {
       };
 
       try {
-        const orderCreated = await fetch(
+        const response = await fetch(
           "https://ssapi.shipstation.com/orders/createorder",
           requestOptions
         );
+        const orderCreated = await response.json();
         console.log("orderCreated", orderCreated);
         return NextResponse.json({ result: orderCreated, ok: true });
       } catch (error) {
