@@ -28,7 +28,7 @@ export default function One() {
         name: "Re Social White T-shirt M",
         quantity: quantity,
         size: "M",
-        priceId: "dasdas",
+        priceId: "price_1ObnHRGkWb1Ap7UJBkNW4hHZ",
         url: "/product_one.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "Re Social White T-shirt L",
         quantity: quantity,
         size: "L",
-        priceId: "dasdas",
+        priceId: "price_1ObnHoGkWb1Ap7UJbOZphPQy",
         url: "/product_one.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "Re Social White T-shirt XL",
         quantity: quantity,
         size: "XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnICGkWb1Ap7UJFBEm5YV7",
         url: "/product_one.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "Re Social White T-shirt 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnIYGkWb1Ap7UJ0kbtdrYB",
         url: "/product_one.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "Re Social White T-shirt 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnJ2GkWb1Ap7UJHnzX7nOf",
         url: "/product_one.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "Re Social White T-shirt 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnJLGkWb1Ap7UJnaC3hbL9",
         url: "/product_one.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "Re Social White T-shirt 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnJkGkWb1Ap7UJzTaVkVAW",
         url: "/product_one.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "Re Social White T-shirt S",
       quantity: quantity,
       size: "S",
-      priceId: "dasdas",
+      priceId: "price_1ObnGtGkWb1Ap7UJh4JYLj1P",
       url: "/product_one.jpg",
     };
   };

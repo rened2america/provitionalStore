@@ -28,7 +28,7 @@ export default function One() {
         name: "6 PMers Black T-shirt M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1ObeMlDsqhqgulRLuRRVyX44",
+        priceId: "price_1Obn0uGkWb1Ap7UJIBqBLI6J",
         url: "/product_two.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "6 PMers Black T-shirt L",
         quantity: quantity,
         size: "L",
-        priceId: "dasdas",
+        priceId: "price_1Obn1jGkWb1Ap7UJ7vwJeI3q",
         url: "/product_two.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "6 PMers Black T-shirt XL",
         quantity: quantity,
         size: "XL",
-        priceId: "dasdas",
+        priceId: "price_1Obn2TGkWb1Ap7UJuFOHYk22",
         url: "/product_two.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "6 PMers Black T-shirt 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "dasdas",
+        priceId: "price_1Obn3tGkWb1Ap7UJqFWrKbOh",
         url: "/product_two.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "6 PMers Black T-shirt 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "dasdas",
+        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
         url: "/product_two.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "6 PMers Black T-shirt 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "dasdas",
+        priceId: "price_1Obn5nGkWb1Ap7UJ4S3RLtod",
         url: "/product_two.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "6 PMers Black T-shirt 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "dasdas",
+        priceId: "price_1Obn6ZGkWb1Ap7UJBxLUC9TQ",
         url: "/product_two.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "6 PMers Black T-shirt S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObeMlDsqhqgulRLuRRVyX44",
+      priceId: "price_1ObmzgGkWb1Ap7UJ2TgTuQoL",
       url: "/product_two.jpg",
     };
   };

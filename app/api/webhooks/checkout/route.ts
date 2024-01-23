@@ -171,7 +171,7 @@ export async function POST(req: Request) {
         size: "00S",
         name: "Re Social White T-shirt S",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt M") {
@@ -180,7 +180,7 @@ export async function POST(req: Request) {
         size: "00M",
         name: "Re Social White T-shirt M",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt L") {
@@ -189,7 +189,7 @@ export async function POST(req: Request) {
         size: "00L",
         name: "Re Social White T-shirt L",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt XL") {
@@ -198,7 +198,7 @@ export async function POST(req: Request) {
         size: "0XL",
         name: "Re Social White T-shirt XL",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt 2XL") {
@@ -207,7 +207,7 @@ export async function POST(req: Request) {
         size: "2XL",
         name: "Re Social White T-shirt 2XL",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt 3XL") {
@@ -216,7 +216,7 @@ export async function POST(req: Request) {
         size: "3XL",
         name: "Re Social White T-shirt 3XL",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt 4XL") {
@@ -225,7 +225,7 @@ export async function POST(req: Request) {
         size: "4XL",
         name: "Re Social White T-shirt 4XL",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
     if (name === "Re Social White T-shirt 5XL") {
@@ -234,7 +234,7 @@ export async function POST(req: Request) {
         size: "5XL",
         name: "Re Social White T-shirt 5XL",
         imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };
     }
   };
@@ -280,6 +280,73 @@ export async function POST(req: Request) {
       });
       console.log("Se ejectuo checkout", items);
       console.log("Se ejectuo checkout", user);
+
+      const headers = new Headers();
+      headers.append("Content-Type", "application/json");
+      headers.append("Authorization", `Basic ${process.env.AUTH_SHIPSTATION!}`);
+      const getCurrentDateTime = () => {
+        let now = new Date();
+
+        let year = now.getFullYear();
+        let month = (now.getMonth() + 1).toString().padStart(2, "0");
+        let day = now.getDate().toString().padStart(2, "0");
+        let hours = now.getHours().toString().padStart(2, "0");
+        let minutes = now.getMinutes().toString().padStart(2, "0");
+        let seconds = now.getSeconds().toString().padStart(2, "0");
+        let milliseconds = now.getMilliseconds().toString().padEnd(3, "0");
+
+        return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}000`;
+      };
+
+      const raw = JSON.stringify({
+        orderNumber: session.id,
+        orderDate: getCurrentDateTime(),
+        orderStatus: "awaiting_shipment",
+        customerUsername: user?.name ? user.name : "",
+        customerEmail: user?.email ? user?.email : "",
+        billTo: {
+          name: user?.name ? user.name : "",
+          company: null,
+          street1: user?.address?.line1 ? user.address.line1 : "",
+          street2: user?.address?.line2 ? user.address.line2 : "",
+          street3: null,
+          city: user?.address?.city ? user.address.city : "",
+          state: user?.address?.state ? user.address.state : "",
+          postalCode: user?.address?.postal_code
+            ? user.address.postal_code
+            : "",
+          country: user?.address?.country ? user.address.country : "",
+          phone: user?.phone ? user.phone : "",
+          residential: true,
+        },
+        shipTo: {
+          name: user?.name ? user.name : "",
+          company: null,
+          street1: user?.address?.line1 ? user.address.line1 : "",
+          street2: user?.address?.line2 ? user.address.line2 : "",
+          street3: null,
+          city: user?.address?.city ? user.address.city : "",
+          state: user?.address?.state ? user.address.state : "",
+          postalCode: user?.address?.postal_code
+            ? user.address.postal_code
+            : "",
+          country: user?.address?.country ? user.address.country : "",
+          phone: user?.phone ? user?.phone : "",
+          residential: true,
+        },
+        items: items,
+      });
+
+      const requestOptions = {
+        method: "POST",
+        headers: headers,
+        body: raw,
+      };
+
+      fetch("https://ssapi.shipstation.com/orders/createorder", requestOptions)
+        .then((response) => response.json())
+        .then((result) => console.log(result))
+        .catch((error) => console.log("error", error));
     }
     // const body = await req.text();
 

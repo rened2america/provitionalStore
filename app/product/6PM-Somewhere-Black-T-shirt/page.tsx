@@ -28,7 +28,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt M",
         quantity: quantity,
         size: "M",
-        priceId: "dasdas",
+        priceId: "price_1ObnAjGkWb1Ap7UJl86M95fe",
         url: "/product_three.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt L",
         quantity: quantity,
         size: "L",
-        priceId: "dasdas",
+        priceId: "price_1ObnBkGkWb1Ap7UJKLzNOBPH",
         url: "/product_three.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt XL",
         quantity: quantity,
         size: "XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnCZGkWb1Ap7UJBjPWdSqf",
         url: "/product_three.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnCzGkWb1Ap7UJxo7rpkZg",
         url: "/product_three.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnDUGkWb1Ap7UJvyfToEsv",
         url: "/product_three.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnDvGkWb1Ap7UJxHnuFNHV",
         url: "/product_three.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "It's 6PM Somewhere Black T-shirt 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "dasdas",
+        priceId: "price_1ObnEVGkWb1Ap7UJJnzqOI4f",
         url: "/product_three.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "It's 6PM Somewhere Black T-shirt S",
       quantity: quantity,
       size: "S",
-      priceId: "dasdas",
+      priceId: "price_1ObnA2GkWb1Ap7UJ79nrfw7d",
       url: "/product_three.jpg",
     };
   };
