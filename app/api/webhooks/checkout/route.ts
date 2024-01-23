@@ -31,7 +31,7 @@ export async function POST(req: Request) {
     const session = event.data.object as Stripe.Checkout.Session;
 
     if (event.type === "checkout.session.completed") {
-      console.log("Se ejectuo checkout", event.request);
+      console.log("Se ejectuo checkout", session);
     }
     // const body = await req.text();
 
