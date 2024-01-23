@@ -31,6 +31,11 @@ export async function POST(req: Request) {
     const session = event.data.object as Stripe.Checkout.Session;
 
     if (event.type === "checkout.session.completed") {
+      const user = session.customer_details;
+      const listData = await stripe.checkout.sessions.listLineItems(session.id);
+      const items = listData.data.map((item: any) => {
+        console.log(item);
+      });
       console.log("Se ejectuo checkout", session);
     }
     // const body = await req.text();
