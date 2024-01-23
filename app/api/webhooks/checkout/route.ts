@@ -284,6 +284,8 @@ export async function POST(req: Request) {
       const headers = new Headers();
       headers.append("Content-Type", "application/json");
       headers.append("Authorization", `Basic ${process.env.AUTH_SHIPSTATION!}`);
+      console.log("Se ejectuo after headers");
+
       const getCurrentDateTime = () => {
         let now = new Date();
 
@@ -336,7 +338,7 @@ export async function POST(req: Request) {
         },
         items: items,
       });
-
+      console.log("after raw", raw);
       const requestOptions = {
         method: "POST",
         headers: headers,
