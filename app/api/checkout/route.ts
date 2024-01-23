@@ -22,6 +22,12 @@ export async function POST(req: Request) {
       payment_method_types: ["card"],
       mode: "payment",
       line_items: productsNormalize,
+      phone_number_collection: {
+        enabled: true,
+      },
+      shipping_address_collection: {
+        allowed_countries: ["US"],
+      },
       success_url: `http://localhost:3000/success?itineraryId=${body.itineraryId}`,
       cancel_url: `http://localhost:3000/`,
     };
