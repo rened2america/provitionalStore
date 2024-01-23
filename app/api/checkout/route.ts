@@ -28,8 +28,8 @@ export async function POST(req: Request) {
       shipping_address_collection: {
         allowed_countries: ["US"],
       },
-      success_url: `http://localhost:3000/success?itineraryId=${body.itineraryId}`,
-      cancel_url: `http://localhost:3000/`,
+      success_url: `https://merchlife.co/success`,
+      cancel_url: `https://merchlife.co/error`,
     };
 
     const checkoutSession: Stripe.Checkout.Session =

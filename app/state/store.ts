@@ -41,7 +41,12 @@ const useStore = create(
             products: [...state.products, { ...product }],
           };
         }),
-      //   decrement: () => set((state) => ({ counter: state.counter - 1 })),
+      removeFromCart: (itemName: string) =>
+        set((state: any) => ({
+          products: state.products.filter(
+            (item: any) => item.name !== itemName
+          ),
+        })),
     }),
     { name: "cart-storage" }
   )

@@ -20,14 +20,15 @@ import {
 import { Inter } from "next/font/google";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import useStore from "../state/store";
+import { redirect } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function Creators() {
-  const { products } = useStore((state) => {
+  const { products, removeFromCart } = useStore((state) => {
     //@ts-ignore
 
-    return { products: state.products };
+    return { products: state.products, removeFromCart: state.removeFromCart };
   });
   return (
     <main
@@ -56,6 +57,12 @@ export default function Creators() {
                       {product.quantity}
                     </Chip>
                   </div>
+                  <Button
+                    color="danger"
+                    onClick={() => removeFromCart(product.name)}
+                  >
+                    Delete
+                  </Button>
                 </div>
               </Card>
               <Divider className="my-4" />
@@ -71,7 +78,9 @@ export default function Creators() {
                 products: products,
               }),
             });
-            console.log(response);
+            const checkout = await response.json();
+            const checkoutLink = checkout.result.url;
+            window.location.href = checkoutLink;
           }}
         >
           Buy

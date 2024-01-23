@@ -21,7 +21,7 @@ const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function One() {
   const [selected, setSelected] = useState(["s"]);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
