@@ -1,26 +1,78 @@
 import Cors from "micro-cors";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
+import Stripe from "stripe";
+import { NextApiRequest, NextApiResponse } from "next";
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY || "");
+// const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY || "");
 
-const cors = Cors({
-  allowMethods: ["POST", "HEAD"],
-});
+// const cors = Cors({
+//   allowMethods: ["POST", "HEAD"],
+// });
 
 const secret = process.env.STRIPE_WEBHOOK_SECRET || "";
 
-export async function POST(req: Request) {
+const buffer = (req: NextApiRequest) => {
+  return new Promise<Buffer>((resolve, reject) => {
+    const chunks: Buffer[] = [];
+
+    req.on("data", (chunk: Buffer) => {
+      chunks.push(chunk);
+    });
+
+    req.on("end", () => {
+      resolve(Buffer.concat(chunks));
+    });
+
+    req.on("error", reject);
+  });
+};
+
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const body = await req.text();
+    const stripe = new Stripe(secret);
 
-    const signature = headers().get("stripe-signature");
+    const webhookSecret: string = secret;
 
-    const event = stripe.webhooks.constructEvent(body, signature, secret);
+    if (req.method === "POST") {
+      const sig = req.headers["stripe-signature"];
 
-    if (event.type === "checkout.session.completed") {
-      console.log("entro", event.data.object);
+      let event: Stripe.Event;
+
+      try {
+        const body = await buffer(req);
+        //@ts-ignore
+        event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
+      } catch (err) {
+        // On error, log and return the error message
+        //@ts-ignore
+
+        console.log(`❌ Error message: ${err.message}`);
+        //@ts-ignore
+
+        res.status(400).send(`Webhook Error: ${err.message}`);
+        return;
+      }
+
+      // Successfully constructed event
+      console.log("✅ Success:", event.id);
+
+      // Cast event data to Stripe object
+      if (event.type === "checkout.session.completed") {
+        const stripeObject: Stripe.PaymentIntent = event.data.object as any;
+        console.log(`💰 PaymentIntent status: ${stripeObject.status}`);
+      }
     }
+
+    // const body = await req.text();
+
+    // const signature = headers().get("stripe-signature");
+
+    // const event = stripe.webhooks.constructEvent(body, signature, secret);
+
+    // if (event.type === "checkout.session.completed") {
+    //   console.log("entro", event.data.object);
+    // }
 
     // const type = {
     //   Poster: "SPP",
