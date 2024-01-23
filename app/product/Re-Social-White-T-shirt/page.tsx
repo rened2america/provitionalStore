@@ -90,7 +90,7 @@ export default function One() {
       name: "Re Social White T-shirt S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObnGtGkWb1Ap7UJh4JYLj1P",
+      priceId: "price_1ObngaGkWb1Ap7UJLcdeJSwV",
       url: "/product_one.jpg",
     };
   };
