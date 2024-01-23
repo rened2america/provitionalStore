@@ -14,6 +14,231 @@ const secretWebhook = process.env.STRIPE_WEBHOOK_SECRET || "";
 const secret = process.env.STRIPE_SECRET_KEY || "";
 
 export async function POST(req: Request) {
+  const searchProduct = (name: string) => {
+    if (name === "6 PMers Black T-shirt S") {
+      return {
+        id: "1",
+        size: "00S",
+        name: "6 PMers Black T-shirt S",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt M") {
+      return {
+        id: "2",
+        size: "00M",
+        name: "6 PMers Black T-shirt M",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt L") {
+      return {
+        id: "3",
+        size: "00L",
+        name: "6 PMers Black T-shirt L",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt XL") {
+      return {
+        id: "4",
+        size: "0XL",
+        name: "6 PMers Black T-shirt XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt 2XL") {
+      return {
+        id: "5",
+        size: "2XL",
+        name: "6 PMers Black T-shirt 2XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt 3XL") {
+      return {
+        id: "6",
+        size: "3XL",
+        name: "6 PMers Black T-shirt 3XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt 4XL") {
+      return {
+        id: "7",
+        size: "4XL",
+        name: "6 PMers Black T-shirt 4XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "6 PMers Black T-shirt 5XL") {
+      return {
+        id: "8",
+        size: "5XL",
+        name: "6 PMers Black T-shirt 5XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+
+    //
+
+    if (name === "It's 6PM Somewhere Black T-shirt S") {
+      return {
+        id: "9",
+        size: "00S",
+        name: "It's 6PM Somewhere Black T-shirt S",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt M") {
+      return {
+        id: "10",
+        size: "00M",
+        name: "It's 6PM Somewhere Black T-shirt M",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt L") {
+      return {
+        id: "11",
+        size: "00L",
+        name: "It's 6PM Somewhere Black T-shirt L",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt XL") {
+      return {
+        id: "12",
+        size: "0XL",
+        name: "It's 6PM Somewhere Black T-shirt XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt 2XL") {
+      return {
+        id: "13",
+        size: "2XL",
+        name: "It's 6PM Somewhere Black T-shirt 2XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt 3XL") {
+      return {
+        id: "14",
+        size: "3XL",
+        name: "It's 6PM Somewhere Black T-shirt 3XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt 4XL") {
+      return {
+        id: "15",
+        size: "4XL",
+        name: "It's 6PM Somewhere Black T-shirt 4XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+    if (name === "It's 6PM Somewhere Black T-shirt 5XL") {
+      return {
+        id: "16",
+        size: "5XL",
+        name: "It's 6PM Somewhere Black T-shirt 5XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU03+(1).jpg",
+      };
+    }
+
+    //
+
+    if (name === "Re Social White T-shirt S") {
+      return {
+        id: "17",
+        size: "00S",
+        name: "Re Social White T-shirt S",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt M") {
+      return {
+        id: "18",
+        size: "00M",
+        name: "Re Social White T-shirt M",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt L") {
+      return {
+        id: "19",
+        size: "00L",
+        name: "Re Social White T-shirt L",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt XL") {
+      return {
+        id: "20",
+        size: "0XL",
+        name: "Re Social White T-shirt XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt 2XL") {
+      return {
+        id: "21",
+        size: "2XL",
+        name: "Re Social White T-shirt 2XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt 3XL") {
+      return {
+        id: "22",
+        size: "3XL",
+        name: "Re Social White T-shirt 3XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt 4XL") {
+      return {
+        id: "23",
+        size: "4XL",
+        name: "Re Social White T-shirt 4XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+    if (name === "Re Social White T-shirt 5XL") {
+      return {
+        id: "24",
+        size: "5XL",
+        name: "Re Social White T-shirt 5XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/design3+(1).jpg",
+      };
+    }
+  };
+
   try {
     const stripe = new Stripe(secret);
     const body = await req.text();
@@ -34,9 +259,27 @@ export async function POST(req: Request) {
       const user = session.customer_details;
       const listData = await stripe.checkout.sessions.listLineItems(session.id);
       const items = listData.data.map((item: any) => {
+        const currentItem = searchProduct(item.description);
         console.log(item);
+        const sku = `PZ${currentItem?.id.padStart(8, "0")}UNTSA${
+          //@ts-ignore
+          parseInt(currentItem.id) > 16 ? "1W" : "1B"
+        }${currentItem?.size}`;
+        const productToReturn = {
+          sku,
+          name: currentItem?.name,
+          quantity: item.quantity,
+          unitPrice: item.price.unit_amount / 100,
+          imageUrl: currentItem?.imgUrl,
+          weight: {
+            value: 0,
+            units: "ounces",
+          },
+        };
+        return productToReturn;
       });
-      console.log("Se ejectuo checkout", session);
+      console.log("Se ejectuo checkout", items);
+      console.log("Se ejectuo checkout", user);
     }
     // const body = await req.text();
 
