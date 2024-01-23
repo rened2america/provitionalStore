@@ -10,64 +10,29 @@ import { NextApiRequest, NextApiResponse } from "next";
 //   allowMethods: ["POST", "HEAD"],
 // });
 
-const secret = process.env.STRIPE_WEBHOOK_SECRET || "";
-
-const buffer = (req: Request) => {
-  return new Promise<Buffer>((resolve, reject) => {
-    const chunks: Buffer[] = [];
-    //@ts-ignore
-
-    req.on("data", (chunk: Buffer) => {
-      chunks.push(chunk);
-    });
-    //@ts-ignore
-
-    req.on("end", () => {
-      resolve(Buffer.concat(chunks));
-    });
-    //@ts-ignore
-
-    req.on("error", reject);
-  });
-};
+const secretWebhook = process.env.STRIPE_WEBHOOK_SECRET || "";
+const secret = process.env.STRIPE_SECRET_KEY || "";
 
 export async function POST(req: Request) {
   try {
     const stripe = new Stripe(secret);
+    const body = await req.text();
+    const signature = headers().get("Stripe-Signature") as string;
 
-    const webhookSecret: string = secret;
+    let event: Stripe.Event;
 
-    if (req.method === "POST") {
+    try {
+      event = stripe.webhooks.constructEvent(body, signature, secretWebhook);
+    } catch (error) {
       //@ts-ignore
-      const sig = req.headers["stripe-signature"];
-
-      let event: Stripe.Event;
-
-      try {
-        const body = await buffer(req);
-        //@ts-ignore
-        event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
-      } catch (err) {
-        // On error, log and return the error message
-        //@ts-ignore
-
-        console.log(`❌ Error message: ${err.message}`);
-        //@ts-ignore
-
-        res.status(400).send(`Webhook Error: ${err.message}`);
-        return;
-      }
-
-      // Successfully constructed event
-      console.log("✅ Success:", event.id);
-
-      // Cast event data to Stripe object
-      if (event.type === "checkout.session.completed") {
-        const stripeObject: Stripe.PaymentIntent = event.data.object as any;
-        console.log(`💰 PaymentIntent status: ${stripeObject.status}`);
-      }
+      return new Response(`Webhook Error: ${error.message}`, { status: 400 });
     }
 
+    const session = event.data.object as Stripe.Checkout.Session;
+
+    if (event.type === "checkout.session.completed") {
+      console.log("Se ejectuo checkout", event.request);
+    }
     // const body = await req.text();
 
     // const signature = headers().get("stripe-signature");
