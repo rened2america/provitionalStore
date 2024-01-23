@@ -165,11 +165,11 @@ export async function POST(req: Request) {
 
     //
 
-    if (name === "Re Social White T-shirt S Test") {
+    if (name === "Re Social White T-shirt S") {
       return {
         id: "17",
         size: "00S",
-        name: "Re Social White T-shirt S Test",
+        name: "Re Social White T-shirt S",
         imgUrl:
           "https://politicozen-prod.s3.us-east-2.amazonaws.com/MU02+(1).jpg",
       };

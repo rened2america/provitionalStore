@@ -102,7 +102,7 @@ export default function Creators() {
             zIndex: "2",
           }}
         >
-          <Image src="/6PMers.jpg" width="180" height="180" />
+          <Avatar src="/6PMers.jpg" className="w-48 h-48 text-large" />
         </div>
         <div
           style={{
