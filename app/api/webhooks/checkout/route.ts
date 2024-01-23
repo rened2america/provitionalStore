@@ -12,21 +12,15 @@ const secret = process.env.STRIPE_WEBHOOK_SECRET || "";
 
 export async function POST(req: Request) {
   try {
-    // const body = await req.text();
+    const body = await req.text();
 
-    // const signature = headers().get("stripe-signature");
+    const signature = headers().get("stripe-signature");
 
-    // const event = stripe.webhooks.constructEvent(body, signature, secret);
+    const event = stripe.webhooks.constructEvent(body, signature, secret);
 
-    // if (event.type === "checkout.session.completed") {
-    //   if (!event.data.object.customer_details.email) {
-    //     throw new Error(`missing user email, ${event.id}`);
-    //   }
-
-    //   if (!event.data.object.metadata.itinerary_id) {
-    //     throw new Error(`missing itinerary_id on metadata, ${event.id}`);
-    //   }
-    // }
+    if (event.type === "checkout.session.completed") {
+      console.log("entro", event.data.object);
+    }
 
     // const type = {
     //   Poster: "SPP",

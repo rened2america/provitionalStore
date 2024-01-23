@@ -21,14 +21,14 @@ const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function One() {
   const [selected, setSelected] = useState(["s"]);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
         name: "6 PMers Black T-shirt M",
         quantity: quantity,
         size: "M",
-        priceId: "dasdas",
+        priceId: "price_1ObeMlDsqhqgulRLuRRVyX44",
         url: "/product_two.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "6 PMers Black T-shirt S",
       quantity: quantity,
       size: "S",
-      priceId: "dasdas",
+      priceId: "price_1ObeMlDsqhqgulRLuRRVyX44",
       url: "/product_two.jpg",
     };
   };
@@ -116,7 +116,7 @@ export default function One() {
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">6 PMers Black T-shirt</div>
-              <div className="text-lg">$40</div>
+              <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />
 
@@ -147,7 +147,8 @@ export default function One() {
             <div className="text-medium text-foreground-500">Quantity</div>
             <Input
               type="number"
-              placeholder="1"
+              // placeholder="1"
+              defaultValue="1"
               labelPlacement="outside"
               className="mt-2"
               onChange={(e) => setQuantity(parseInt(e.target.value))}

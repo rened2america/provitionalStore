@@ -66,7 +66,10 @@ export default function Creators() {
           onClick={async () => {
             const response = await fetch("api/checkout/", {
               method: "post",
-              body: JSON.stringify({ itineraryId: "ok" }),
+              body: JSON.stringify({
+                itineraryId: "ok",
+                products: products,
+              }),
             });
             console.log(response);
           }}

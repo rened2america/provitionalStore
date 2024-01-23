@@ -147,26 +147,20 @@ export default function Creators() {
               height: "100px",
               width: "24px",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "1fr",
               gap: "8px",
             }}
           >
-            <div
+            <Link
+              href="https://www.instagram.com/6pmers/"
               style={{
                 height: "100px",
                 width: "24px",
+                cursor: "pointer",
               }}
             >
               <InstagramIcon />
-            </div>
-            <div
-              style={{
-                height: "100px",
-                width: "24px",
-              }}
-            >
-              <FacebookIcon />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -176,30 +170,7 @@ export default function Creators() {
           justifyContent: "center",
         }}
       >
-        {" "}
         <div className="max-w-[900px] gap-2 grid grid-cols-12 px-8 pb-8">
-          <Card className="col-span-12 sm:col-span-4 h-[300px]">
-            <Link href={"/product/Re-Social-White-T-shirt"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-                <h4
-                  className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
-                >
-                  Re-Social White T-shirt
-                </h4>
-              </CardHeader>
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src="/product_one.jpg"
-              />
-            </Link>
-          </Card>
           <Card className="col-span-12 sm:col-span-4 h-[300px]">
             <Link href={"/product/6-PMers-Black-T-shirt"}>
               <CardHeader className="absolute z-10 top-0 flex-col !items-start bg-white/30">
@@ -239,6 +210,28 @@ export default function Creators() {
                 alt="Card background"
                 className="z-0 w-full h-full object-cover"
                 src="/product_three.jpg"
+              />
+            </Link>
+          </Card>
+          <Card className="col-span-12 sm:col-span-4 h-[300px]">
+            <Link href={"/product/Re-Social-White-T-shirt"}>
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
+                  Go to buy
+                </p>
+                <h4
+                  className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
+                >
+                  Re-Social White T-shirt
+                </h4>
+              </CardHeader>
+              <Image
+                removeWrapper
+                alt="Card background"
+                className="z-0 w-full h-full object-cover"
+                src="/product_one.jpg"
               />
             </Link>
           </Card>

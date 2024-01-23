@@ -116,7 +116,7 @@ export default function One() {
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">Re Social White T-shirt</div>
-              <div className="text-lg">$40</div>
+              <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />
 

@@ -118,7 +118,7 @@ export default function One() {
               <div className="text-xl col-span-3">
                 It&apos;s 6PM Somewhere Black T-shirt
               </div>
-              <div className="text-lg">$40</div>
+              <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />
 

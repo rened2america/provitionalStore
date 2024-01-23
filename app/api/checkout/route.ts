@@ -6,7 +6,13 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "");
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-
+    const productsNormalize = body.products.map((product: any) => {
+      return {
+        price: product.priceId,
+        quantity: product.quantity,
+      };
+    });
+    console.log(body);
     if (!body.itineraryId) {
       throw new Error("Missing itinerary_id");
     }
@@ -15,12 +21,7 @@ export async function POST(req: Request) {
       submit_type: "pay",
       payment_method_types: ["card"],
       mode: "payment",
-      line_items: [
-        {
-          price: "price_1OUaqODsqhqgulRLU35CHrfa",
-          quantity: 1,
-        },
-      ],
+      line_items: productsNormalize,
       success_url: `http://localhost:3000/success?itineraryId=${body.itineraryId}`,
       cancel_url: `http://localhost:3000/`,
     };
