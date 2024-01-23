@@ -345,10 +345,18 @@ export async function POST(req: Request) {
         body: raw,
       };
 
-      fetch("https://ssapi.shipstation.com/orders/createorder", requestOptions)
-        .then((response) => response.json())
-        .then((result) => console.log(result))
-        .catch((error) => console.log("error", error));
+      try {
+        const orderCreated = await fetch(
+          "https://ssapi.shipstation.com/orders/createorder",
+          requestOptions
+        );
+        console.log("orderCreated", orderCreated);
+        return NextResponse.json({ result: orderCreated, ok: true });
+      } catch (error) {
+        console.log("error", error);
+
+        return NextResponse.json({ result: error, ok: false });
+      }
     }
     // const body = await req.text();
 
@@ -482,7 +490,7 @@ export async function POST(req: Request) {
     //     .catch((error) => console.log("error", error));
     // }
 
-    return NextResponse.json({ result: event, ok: true });
+    return NextResponse.json({ result: null, ok: false });
   } catch (error) {
     console.error(error);
     return NextResponse.json(
