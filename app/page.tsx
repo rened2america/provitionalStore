@@ -1,9 +1,15 @@
+"use client";
 import { Avatar, Button, Input, Select, SelectItem } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { SearchIcon } from "./components/icons/SearchIcon";
+import { useEffect } from "react";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  useEffect(() => {
+    redirect("store/The6PMersSwagShop");
+  }, []);
   return (
     <main className="">
       <div
@@ -253,7 +259,6 @@ export default function Home() {
           />
         </div>
       </div>
-      <section className="bg">dsdsadas</section>
     </main>
   );
 }
