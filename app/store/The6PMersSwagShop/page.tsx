@@ -81,15 +81,15 @@ export default function Creators() {
             >
               <path
                 fill="#FAFAFA"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M13.333 8a.667.667 0 0 1-.666.666H3.333a.667.667 0 1 1 0-1.333h9.334c.368 0 .666.299.666.667Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
               <path
                 fill="#FAFAFA"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M8.471 13.138a.667.667 0 0 1-.942 0L2.862 8.472a.667.667 0 0 1 0-.943l4.667-4.667a.667.667 0 1 1 .942.943L4.276 8l4.195 4.195c.26.26.26.683 0 .943Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
             Back
@@ -171,49 +171,71 @@ export default function Creators() {
         }}
       >
         <div className="max-w-[900px] gap-2 grid grid-cols-12 px-8 pb-8">
-          <Card className="col-span-12 sm:col-span-4 h-[300px]">
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/6-PMers-Black-T-shirt"}>
-              <CardHeader className="absolute z-10 top-0 flex-col !items-start bg-white/30">
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
-                  className={`${interProducts.variable} text-xs text-slate-900/70 uppercase font-bold`}
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
                 >
                   Go to buy
                 </p>
-                <h4
-                  className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
-                >
-                  6 PMers Black T-shirt
-                </h4>
               </CardHeader>
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src="/product_two.jpg"
-              />
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/product_two.jpg"
+                />
+              </CardBody>
             </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                6 PMers Black T-shirt
+              </h4>
+            </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[300px]">
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/6PM-Somewhere-Black-T-shirt"}>
-              <CardHeader className="absolute z-10 top-1 flex-col !items-start bg-white/30">
-                <p className="text-tiny text-black/60 uppercase font-bold">
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
                   Go to buy
                 </p>
-                <h4
-                  className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
-                >
-                  It&apos;s 6PM Somewhere Black T-shirt
-                </h4>
               </CardHeader>
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src="/product_three.jpg"
-              />
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/product_three.jpg"
+                />
+              </CardBody>
             </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                It&apos;s 6PM Somewhere Black T-shirt
+              </h4>
+            </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[300px]">
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Re-Social-White-T-shirt"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -221,19 +243,29 @@ export default function Creators() {
                 >
                   Go to buy
                 </p>
-                <h4
-                  className={`${interProducts.variable} font-sans text-slate-900 font-medium text-base`}
-                >
-                  Re-Social White T-shirt
-                </h4>
               </CardHeader>
-              <Image
-                removeWrapper
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src="/product_one.jpg"
-              />
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/product_one.jpg"
+                />
+              </CardBody>
             </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                Re-Social White T-shirt
+              </h4>
+            </CardFooter>
           </Card>
         </div>
       </section>
