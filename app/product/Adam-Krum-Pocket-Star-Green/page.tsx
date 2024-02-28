@@ -28,7 +28,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1Obn0uGkWb1Ap7UJIBqBLI6J",
+        priceId: "price_1Oonp6GkWb1Ap7UJI5iLn4FL",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Obn1jGkWb1Ap7UJ7vwJeI3q",
+        priceId: "price_1OonptGkWb1Ap7UJveC6z54S",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1Obn2TGkWb1Ap7UJuFOHYk22",
+        priceId: "price_1OonqdGkWb1Ap7UJo9y1K6Nh",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1Obn3tGkWb1Ap7UJqFWrKbOh",
+        priceId: "price_1Oonr5GkWb1Ap7UJ8y5t2iyX",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
+        priceId: "price_1OonsYGkWb1Ap7UJ2wple5nj",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1Obn5nGkWb1Ap7UJ4S3RLtod",
+        priceId: "price_1Oont0GkWb1Ap7UJQ6bcehYM",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Green 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1Obn6ZGkWb1Ap7UJBxLUC9TQ",
+        priceId: "price_1OontTGkWb1Ap7UJfr4AgRHS",
         url: "/adam/starLogoGreen.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "Adam Krum Pocket Star Green S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObmzgGkWb1Ap7UJ2TgTuQoL",
+      priceId: "price_1OonuCGkWb1Ap7UJHsDNqrC0",
       url: "/adam/starLogoGreen.jpg",
     };
   };

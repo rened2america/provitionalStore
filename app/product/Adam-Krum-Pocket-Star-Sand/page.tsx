@@ -28,7 +28,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1Obn0uGkWb1Ap7UJIBqBLI6J",
+        priceId: "price_1OonzuGkWb1Ap7UJJomoiqTe",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Obn1jGkWb1Ap7UJ7vwJeI3q",
+        priceId: "price_1Ooo0SGkWb1Ap7UJ6Lbq2jl5",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1Obn2TGkWb1Ap7UJuFOHYk22",
+        priceId: "price_1Ooo0rGkWb1Ap7UJt4Wm6dWi",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1Obn3tGkWb1Ap7UJqFWrKbOh",
+        priceId: "price_1Ooo1HGkWb1Ap7UJsag3ih7l",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
+        priceId: "price_1Ooo1gGkWb1Ap7UJPRhwpT4K",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1Obn5nGkWb1Ap7UJ4S3RLtod",
+        priceId: "price_1Ooo26GkWb1Ap7UJFPzN6HJc",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "Adam Krum Pocket Star Sand 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1Obn6ZGkWb1Ap7UJBxLUC9TQ",
+        priceId: "price_1Ooo2aGkWb1Ap7UJFkv6F0zA",
         url: "/adam/starLogoSand.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "Adam Krum Pocket Star Sand S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObmzgGkWb1Ap7UJ2TgTuQoL",
+      priceId: "price_1Ooo30GkWb1Ap7UJj1iygZaU",
       url: "/adam/starLogoSand.jpg",
     };
   };
