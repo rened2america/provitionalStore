@@ -25,73 +25,73 @@ export default function One() {
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
-        name: "Adam Krum Pocket Classic Green M",
+        name: "2nd Amendment American Freedom White M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1OomkTGkWb1Ap7UJuHXd5YMD",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1Ooln5GkWb1Ap7UJgBmcNpT4",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "l") {
       return {
-        name: "Adam Krum Pocket Classic Green L",
+        name: "2nd Amendment American Freedom White L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Ooml6GkWb1Ap7UJ7oUpJ4Kg",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolnaGkWb1Ap7UJLGIboR0K",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "xl") {
       return {
-        name: "Adam Krum Pocket Classic Green XL",
+        name: "2nd Amendment American Freedom White XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1OomlqGkWb1Ap7UJOcc0ziDH",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1Oolo8GkWb1Ap7UJHFZrqW8C",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "2xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 2XL",
+        name: "2nd Amendment American Freedom White 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1OommoGkWb1Ap7UJ8uHERp8v",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolonGkWb1Ap7UJJDfuGagP",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "3xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 3XL",
+        name: "2nd Amendment American Freedom White 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1OomnUGkWb1Ap7UJdGuemyKU",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolpAGkWb1Ap7UJBt9laoSS",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "4xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 4XL",
+        name: "2nd Amendment American Freedom White 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1OomoaGkWb1Ap7UJ9X9tHvDh",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolpeGkWb1Ap7UJKL3YIMbv",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     if (selected[0] === "5xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 5XL",
+        name: "2nd Amendment American Freedom White 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1OompIGkWb1Ap7UJqHRyauMP",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolqCGkWb1Ap7UJmkw7agyj",
+        url: "/2A/2ndAmendmentAFWhite.jpg",
       };
     }
     return {
-      name: "Adam Krum Pocket Classic Green S",
+      name: "2nd Amendment American Freedom White S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1OomqRGkWb1Ap7UJ3JEwhz6b",
-      url: "/adam/classicLogoGreen.jpg",
+      priceId: "price_1OolrfGkWb1Ap7UJeDdaIupj",
+      url: "/2A/2ndAmendmentAFWhite.jpg",
     };
   };
 
@@ -112,11 +112,11 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/adam/classicLogoGreen.jpg" width="350" />
+          <Image src="/2A/2ndAmendmentAFWhite.jpg" width="350" />
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">
-                Adam Krum Pocket Classic Green
+                2nd Amendment American Freedom White
               </div>
               <div className="text-lg">$24.5</div>
             </div>

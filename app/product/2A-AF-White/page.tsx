@@ -25,73 +25,73 @@ export default function One() {
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
-        name: "Adam Krum Pocket Classic Green M",
+        name: "2A AF White M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1OomkTGkWb1Ap7UJuHXd5YMD",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolfIGkWb1Ap7UJi10tbETx",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "l") {
       return {
-        name: "Adam Krum Pocket Classic Green L",
+        name: "2A AF White L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Ooml6GkWb1Ap7UJ7oUpJ4Kg",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolgHGkWb1Ap7UJmRNUrlWt",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "xl") {
       return {
-        name: "Adam Krum Pocket Classic Green XL",
+        name: "2A AF White XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1OomlqGkWb1Ap7UJOcc0ziDH",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1Oolh4GkWb1Ap7UJauIu8AGE",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "2xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 2XL",
+        name: "2A AF White 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1OommoGkWb1Ap7UJ8uHERp8v",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolhkGkWb1Ap7UJ1hq8PKfW",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "3xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 3XL",
+        name: "2A AF White 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1OomnUGkWb1Ap7UJdGuemyKU",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OoliIGkWb1Ap7UJObUSEy0V",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "4xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 4XL",
+        name: "2A AF White 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1OomoaGkWb1Ap7UJ9X9tHvDh",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OolipGkWb1Ap7UJGLtCkHF6",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     if (selected[0] === "5xl") {
       return {
-        name: "Adam Krum Pocket Classic Green 5XL",
+        name: "2A AF White 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1OompIGkWb1Ap7UJqHRyauMP",
-        url: "/adam/classicLogoGreen.jpg",
+        priceId: "price_1OoljKGkWb1Ap7UJVJrjm6fU",
+        url: "/2A/2AAfWhite.jpg",
       };
     }
     return {
-      name: "Adam Krum Pocket Classic Green S",
+      name: "2A AF White S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1OomqRGkWb1Ap7UJ3JEwhz6b",
-      url: "/adam/classicLogoGreen.jpg",
+      priceId: "price_1OoljtGkWb1Ap7UJKGzI8MpW",
+      url: "/2A/2AAfWhite.jpg",
     };
   };
 
@@ -112,12 +112,10 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/adam/classicLogoGreen.jpg" width="350" />
+          <Image src="/2A/2AAfWhite.jpg" width="350" />
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">
-                Adam Krum Pocket Classic Green
-              </div>
+              <div className="text-xl col-span-3">2A AF White</div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

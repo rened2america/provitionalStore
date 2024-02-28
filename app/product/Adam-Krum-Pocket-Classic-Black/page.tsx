@@ -28,7 +28,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1Obn0uGkWb1Ap7UJIBqBLI6J",
+        priceId: "price_1Oom70GkWb1Ap7UJoI7Terxu",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Obn1jGkWb1Ap7UJ7vwJeI3q",
+        priceId: "price_1Oom86GkWb1Ap7UJChWaAtmK",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1Obn2TGkWb1Ap7UJuFOHYk22",
+        priceId: "price_1Oom8gGkWb1Ap7UJDqhdjGTk",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1Obn3tGkWb1Ap7UJqFWrKbOh",
+        priceId: "price_1OomXlGkWb1Ap7UJcECIYDMA",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
+        priceId: "price_1OomfFGkWb1Ap7UJIqaYAxtQ",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1Obn5nGkWb1Ap7UJ4S3RLtod",
+        priceId: "price_1OomfpGkWb1Ap7UJhXwAQAkO",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Black 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1Obn6ZGkWb1Ap7UJBxLUC9TQ",
+        priceId: "price_1OomgKGkWb1Ap7UJAzQfXiLW",
         url: "/adam/classicLogoBlack.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "Adam Krum Pocket Classic Black S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObmzgGkWb1Ap7UJ2TgTuQoL",
+      priceId: "price_1Oomh6GkWb1Ap7UJ8nTcoqXP",
       url: "/adam/classicLogoBlack.jpg",
     };
   };

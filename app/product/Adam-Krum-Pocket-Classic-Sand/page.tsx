@@ -28,7 +28,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1Obn0uGkWb1Ap7UJIBqBLI6J",
+        priceId: "price_1Oon4BGkWb1Ap7UJ0U0ZHWmO",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -37,7 +37,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1Obn1jGkWb1Ap7UJ7vwJeI3q",
+        priceId: "price_1Oon5ZGkWb1Ap7UJfpuZ7z3W",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -46,7 +46,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1Obn2TGkWb1Ap7UJuFOHYk22",
+        priceId: "price_1Oon6iGkWb1Ap7UJK1out9j8",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -55,7 +55,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1Obn3tGkWb1Ap7UJqFWrKbOh",
+        priceId: "price_1Oon8rGkWb1Ap7UJUVjbFc8w",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -64,7 +64,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
+        priceId: "price_1OonAmGkWb1Ap7UJAPlx0G3w",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -73,7 +73,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1Obn5nGkWb1Ap7UJ4S3RLtod",
+        priceId: "price_1OonDZGkWb1Ap7UJOHngSU38",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -82,7 +82,7 @@ export default function One() {
         name: "Adam Krum Pocket Classic Sand 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1Obn6ZGkWb1Ap7UJBxLUC9TQ",
+        priceId: "price_1OonEFGkWb1Ap7UJWR1A9CJN",
         url: "/adam/classicLogoSand.jpg",
       };
     }
@@ -90,7 +90,7 @@ export default function One() {
       name: "Adam Krum Pocket Classic Sand S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1ObmzgGkWb1Ap7UJ2TgTuQoL",
+      priceId: "price_1OonEgGkWb1Ap7UJPs9B2IZU",
       url: "/adam/classicLogoSand.jpg",
     };
   };

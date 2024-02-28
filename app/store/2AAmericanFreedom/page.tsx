@@ -172,7 +172,7 @@ export default function Creators() {
       >
         <div className="max-w-[900px] gap-2 grid grid-cols-12 px-8 pb-8">
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-Grey"}>
+            <Link href={"/product/2A-AF-White"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
                   className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
@@ -185,7 +185,7 @@ export default function Creators() {
                   removeWrapper
                   alt="Card background"
                   className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoGrey.jpg"
+                  src="/2A/2AAfWhite.jpg"
                 />
               </CardBody>
             </Link>
@@ -199,12 +199,12 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic Grey
+                2A AF Tee White
               </h4>
             </CardFooter>
           </Card>
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Star-Grey"}>
+            <Link href={"/product/American-Freedom-Eagle-White"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
                   className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
@@ -217,7 +217,7 @@ export default function Creators() {
                   removeWrapper
                   alt="Card background"
                   className="z-0 w-full h-full object-cover"
-                  src="/adam/starLogoGrey.jpg"
+                  src="/2A/AFEagleWhite.jpg"
                 />
               </CardBody>
             </Link>
@@ -231,12 +231,12 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Star Grey
+                American Freedom Eagle White
               </h4>
             </CardFooter>
           </Card>
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-Grey"}>
+            <Link href={"/product/2nd-Amendment-American-Freedom-White"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
                   className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
@@ -249,7 +249,7 @@ export default function Creators() {
                   removeWrapper
                   alt="Card background"
                   className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoGrey.jpg"
+                  src="/2A/2ndAmendmentAFWhite.jpg"
                 />
               </CardBody>
             </Link>
@@ -263,359 +263,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar Grey
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-White"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoWhite.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Classic White
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-White"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoWhite.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Guitar White
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-Green"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoGreen.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Classic Green
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Star-Green"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/starLogoGreen.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Star Green
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-Green"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoGreen.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Guitar Green
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-Black"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoBlack.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Classic Black
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Star-Black"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/starLogoBlack.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Star Black
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-Black"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoBlack.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Guitar Black
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-Sand"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoSand.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Classic Sand
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Star-Sand"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/starLogoSand.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Star Sand
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-Sand"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoSand.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Pocket Guitar Sand
+                2nd Amendment American Freedom White
               </h4>
             </CardFooter>
           </Card>
