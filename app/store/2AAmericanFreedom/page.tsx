@@ -38,7 +38,7 @@ export default function Creators() {
         }}
       >
         <img
-          src="/6PMers.jpg"
+          src="/2A/2aBg.png"
           alt=""
           style={{
             width: "100%",
@@ -102,7 +102,7 @@ export default function Creators() {
             zIndex: "2",
           }}
         >
-          <Avatar src="/6PMers.jpg" className="w-48 h-48 text-large" />
+          <Avatar src="/2A/P2a.png" className="w-48 h-48 text-large" />
         </div>
         <div
           style={{
