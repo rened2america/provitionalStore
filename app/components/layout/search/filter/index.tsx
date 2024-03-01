@@ -1,8 +1,7 @@
-import { SortFilterItem } from 'lib/constants';
-import FilterItemDropdown from './dropdown';
-import { FilterItem } from './item';
+import FilterItemDropdown from "./dropdown";
+import { FilterItem } from "./item";
 
-export type ListItem = SortFilterItem | PathFilterItem;
+export type ListItem = any | PathFilterItem;
 export type PathFilterItem = { title: string; path: string };
 
 function FilterItemList({ list }: { list: ListItem[] }) {
@@ -15,7 +14,13 @@ function FilterItemList({ list }: { list: ListItem[] }) {
   );
 }
 
-export default function FilterList({ list, title }: { list: ListItem[]; title?: string }) {
+export default function FilterList({
+  list,
+  title,
+}: {
+  list: ListItem[];
+  title?: string;
+}) {
   return (
     <>
       <nav>
