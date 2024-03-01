@@ -41,10 +41,10 @@ module.exports = {
   plugins: [
     require("@tailwindcss/container-queries"),
     require("@tailwindcss/typography"),
-    plugin(({ matchUtilities, theme }) => {
+    plugin(({ matchUtilities, theme }: { matchUtilities: any; theme: any }) => {
       matchUtilities(
         {
-          "animation-delay": (value) => {
+          "animation-delay": (value: any) => {
             return {
               "animation-delay": value,
             };
