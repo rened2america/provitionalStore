@@ -24,7 +24,6 @@ export default function Creators() {
         fontFamily: "'Inter',sans-serif",
       }}
     >
-      <NavbarHeader />
       <section
         style={{
           display: "grid",

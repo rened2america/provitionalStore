@@ -1,4 +1,3 @@
-"use client";
 import { Avatar, Input, Select, SelectItem } from "@nextui-org/react";
 import Link from "next/link";
 import {
@@ -9,12 +8,18 @@ import {
   Image,
   Button,
 } from "@nextui-org/react";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import { FacebookIcon } from "@/app/components/icons/facebookIcon";
 import { InstagramIcon } from "@/app/components/icons/InstagramIcon";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const metadata: Metadata = {
+  title: "Adam Krum",
+  description: "Store",
+};
 
 export default function Creators() {
   return (
@@ -24,7 +29,6 @@ export default function Creators() {
         fontFamily: "'Inter',sans-serif",
       }}
     >
-      <NavbarHeader />
       <div
         style={{
           padding: "42px 72px 58px",
@@ -64,45 +68,47 @@ export default function Creators() {
             width: "100%",
           }}
         >
-          <button
-            className={inter.className}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 2fr",
-              alignItems: "center",
-            }}
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="none"
+          <Link href="/">
+            <button
+              className={inter.className}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 2fr",
+                alignItems: "center",
+              }}
+              type="button"
             >
-              <path
-                fill="#FAFAFA"
-                fillRule="evenodd"
-                d="M13.333 8a.667.667 0 0 1-.666.666H3.333a.667.667 0 1 1 0-1.333h9.334c.368 0 .666.299.666.667Z"
-                clipRule="evenodd"
-              ></path>
-              <path
-                fill="#FAFAFA"
-                fillRule="evenodd"
-                d="M8.471 13.138a.667.667 0 0 1-.942 0L2.862 8.472a.667.667 0 0 1 0-.943l4.667-4.667a.667.667 0 1 1 .942.943L4.276 8l4.195 4.195c.26.26.26.683 0 .943Z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            Back
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+              >
+                <path
+                  fill="#FAFAFA"
+                  fillRule="evenodd"
+                  d="M13.333 8a.667.667 0 0 1-.666.666H3.333a.667.667 0 1 1 0-1.333h9.334c.368 0 .666.299.666.667Z"
+                  clipRule="evenodd"
+                ></path>
+                <path
+                  fill="#FAFAFA"
+                  fillRule="evenodd"
+                  d="M8.471 13.138a.667.667 0 0 1-.942 0L2.862 8.472a.667.667 0 0 1 0-.943l4.667-4.667a.667.667 0 1 1 .942.943L4.276 8l4.195 4.195c.26.26.26.683 0 .943Z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              Back
+            </button>
+          </Link>
         </div>
         <div
           style={{
-            width: "180px",
-            height: "180px",
+            width: "192px",
+            height: "192px",
             zIndex: "2",
           }}
         >
-          <Avatar src="/adam/pAdam.png" className="w-48 h-48 text-large" />
+          <Avatar src="/adam/pAdamD1.png" className="w-48 h-48 text-large" />
         </div>
         <div
           style={{
@@ -134,8 +140,8 @@ export default function Creators() {
               lineHeight: "1.8rem",
             }}
           >
-            Welcome to our Merch shop, where every 6PM enthusiast will find
-            their perfect match in our club collection tees!{" "}
+            Welcome to the Adam Krum Merch Shop! Grab your favorite pieces and
+            join the family. Thanks for your support and rock on!
           </p>
 
           <div
@@ -152,7 +158,7 @@ export default function Creators() {
             }}
           >
             <Link
-              href="https://www.instagram.com/6pmers/"
+              href="https://www.instagram.com/AdamKrum/"
               style={{
                 height: "100px",
                 width: "24px",

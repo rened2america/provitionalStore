@@ -1,4 +1,3 @@
-"use client";
 import { Avatar, Input, Select, SelectItem } from "@nextui-org/react";
 import Link from "next/link";
 import {
@@ -15,7 +14,12 @@ import { FacebookIcon } from "@/app/components/icons/facebookIcon";
 import { InstagramIcon } from "@/app/components/icons/InstagramIcon";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "The 6PMers Swag Shop",
+  description: "Store",
+};
 export default function Creators() {
   return (
     <main
@@ -24,7 +28,6 @@ export default function Creators() {
         fontFamily: "'Inter',sans-serif",
       }}
     >
-      <NavbarHeader />
       <div
         style={{
           padding: "42px 72px 58px",
@@ -64,41 +67,43 @@ export default function Creators() {
             width: "100%",
           }}
         >
-          <button
-            className={inter.className}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 2fr",
-              alignItems: "center",
-            }}
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="none"
+          <Link href="/">
+            <button
+              className={inter.className}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 2fr",
+                alignItems: "center",
+              }}
+              type="button"
             >
-              <path
-                fill="#FAFAFA"
-                fillRule="evenodd"
-                d="M13.333 8a.667.667 0 0 1-.666.666H3.333a.667.667 0 1 1 0-1.333h9.334c.368 0 .666.299.666.667Z"
-                clipRule="evenodd"
-              ></path>
-              <path
-                fill="#FAFAFA"
-                fillRule="evenodd"
-                d="M8.471 13.138a.667.667 0 0 1-.942 0L2.862 8.472a.667.667 0 0 1 0-.943l4.667-4.667a.667.667 0 1 1 .942.943L4.276 8l4.195 4.195c.26.26.26.683 0 .943Z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            Back
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+              >
+                <path
+                  fill="#FAFAFA"
+                  fillRule="evenodd"
+                  d="M13.333 8a.667.667 0 0 1-.666.666H3.333a.667.667 0 1 1 0-1.333h9.334c.368 0 .666.299.666.667Z"
+                  clipRule="evenodd"
+                ></path>
+                <path
+                  fill="#FAFAFA"
+                  fillRule="evenodd"
+                  d="M8.471 13.138a.667.667 0 0 1-.942 0L2.862 8.472a.667.667 0 0 1 0-.943l4.667-4.667a.667.667 0 1 1 .942.943L4.276 8l4.195 4.195c.26.26.26.683 0 .943Z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              Back
+            </button>
+          </Link>
         </div>
         <div
           style={{
-            width: "180px",
-            height: "180px",
+            width: "192px",
+            height: "192px",
             zIndex: "2",
           }}
         >

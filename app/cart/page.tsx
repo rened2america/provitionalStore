@@ -38,9 +38,7 @@ export default function Creators() {
       }}
       className="h-screen"
     >
-      <NavbarHeader />
-
-      <div className="w-screen grid justify-center">
+      <div className="grid justify-center">
         {products.map((product: any) => {
           return (
             <>

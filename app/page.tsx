@@ -1,264 +1,180 @@
-"use client";
-import { Avatar, Button, Input, Select, SelectItem } from "@nextui-org/react";
-import Image from "next/image";
-import Link from "next/link";
-import { SearchIcon } from "./components/icons/SearchIcon";
-import { useEffect } from "react";
-import { redirect } from "next/navigation";
+import { Carousel } from "./components/carousel";
+import { ThreeItemGrid } from "./components/grid/three-items";
+import { ThreeItemGridStores } from "./components/gridStore/three-items-store";
 
-export default function Home() {
-  useEffect(() => {
-    redirect("store/The6PMersSwagShop");
-  }, []);
+import { Suspense } from "react";
+export const runtime = "edge";
+
+export const metadata = {
+  description:
+    "High-performance ecommerce store built with Next.js, Vercel, and Shopify.",
+  openGraph: {
+    type: "website",
+  },
+};
+
+export default async function HomePage() {
   return (
-    <main className="">
+    <>
       <div
         style={{
-          position: "relative",
-          padding: "200px 0 140px",
-          display: "grid",
-          justifyItems: "center",
+          filter: "grayscale(50%)",
         }}
       >
-        <Image
-          src="https://ik.imagekit.io/freeflo/production/7b22dd96-285f-44c9-94e8-87782efb13a0.png?tr=w-3840,q-80&alt=media&pr-true"
-          width="1366"
-          height="600"
-          alt="hero"
-          style={{
-            position: "absolute",
-            height: "100%",
-            width: "100%",
-            left: "0",
-            top: "0",
-            right: "0",
-            bottom: "0",
-            color: "transparent",
-            objectFit: "cover",
-          }}
-        />
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            position: "absolute",
-            width: "100%",
-            top: "16px",
-            left: "0",
-            right: "0",
-            padding: "2px 72px 0",
-            justifyContent: "flex-end",
-            fontFamily: "'Inter',sans-serif",
-            letterSpacing: "-.0084rem",
-            height: "60px",
-          }}
-        >
-          <div
-            style={{
-              display: "grid",
-              alignItems: "center",
-            }}
-          >
-            <span>Merchlife</span>
+        <div className="relative overflow-hidden bg-cover bg-no-repeat">
+          <img src="/01.webp" alt="" />
+        </div>
+      </div>
+      <ThreeItemGrid />
+      <Suspense>
+        <Carousel />
+      </Suspense>
+      <ThreeItemGridStores />
+
+      <section className="bg-white dark:bg-white">
+        <div className="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
+          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-900">
+              Connect with Your Audience through Social Media
+            </h2>
+            <p className="mb-4">
+              Amplify your reach by linking your Merchlife store with your
+              social media profiles. Engage directly with your fans and
+              followers, and watch as your creations capture hearts and minds
+              across platforms.
+            </p>
+            <p>
+              We are strategists, designers and developers. Innovators and
+              problem solvers. Small enough to be simple and quick.
+            </p>
           </div>
-          <div style={{}}>
-            <nav
-              style={{
-                backgroundColor: "rgba(0,0,0,.4)",
-                backdropFilter: "blur(22.5px)",
-                padding: "8px 8px",
-                borderRadius: "100px",
-                width: "297px",
-                height: "56px",
-              }}
-            >
-              <ul
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  gap: "8px",
-                }}
-              >
-                <li
-                  style={{
-                    display: "grid",
-                    textAlign: "center",
-                    backdropFilter: "blur(22.5px)",
-                    backgroundColor: "rgb(255 255 255 / 19%)",
-                    alignContent: "center",
-                    borderRadius: "24px",
-                    width: "136.5px",
-                    height: "40px",
-                  }}
-                >
-                  <Link
-                    href="/store"
-                    style={{
-                      color: "#e5e5e5",
-                      padding: "8px 21px",
-                    }}
-                  >
-                    <span
-                      style={{
-                        opacity: "1",
-                      }}
-                    >
-                      Store
-                    </span>
-                  </Link>
-                </li>
-                <li
-                  style={{
-                    display: "grid",
-                    textAlign: "center",
-                    alignContent: "center",
-                    borderRadius: "24px",
-                    width: "136.5px",
-                    height: "40px",
-                  }}
-                >
-                  <Link
-                    href="/creators"
-                    style={{
-                      color: "#e5e5e5",
-                      padding: "8px 21px",
-                    }}
-                  >
-                    <span
-                      style={{
-                        opacity: "1",
-                      }}
-                    >
-                      Creators
-                    </span>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              justifyContent: "end",
-              alignContent: "center",
-            }}
-          >
-            <nav>
-              <ul
-                style={{
-                  display: "flex",
-                  gap: "16px",
-                }}
-              >
-                <li
-                  style={{
-                    display: "grid",
-                    textAlign: "center",
-                    backdropFilter: "blur(22.5px)",
-                    backgroundColor: "rgb(255 255 255 / 19%)",
-                    alignContent: "center",
-                    borderRadius: "24px",
-                    width: "200px",
-                    height: "40px",
-                  }}
-                >
-                  <Link
-                    href="/store"
-                    style={{
-                      color: "#e5e5e5",
-                      padding: "8px 21px",
-                    }}
-                  >
-                    <span
-                      style={{
-                        opacity: "1",
-                      }}
-                    >
-                      Create new design
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Avatar
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                    size="md"
-                  />
-                </li>
-              </ul>
-            </nav>
+          <div className="mt-8">
+            <img
+              className="mt-4 w-full rounded-lg lg:mt-10"
+              src="socialmedia.png"
+              alt="office content 2"
+            />
           </div>
         </div>
-        <div
-          style={{
-            width: "60%",
-            padding: "0 72px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyItems: "center",
-            position: "relative",
-            minWidth: "800px",
-          }}
-        >
+      </section>
+      <section className="bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
+          <div className="mt-8 grid grid-cols-2 gap-4">
+            <img
+              className="w-full rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+              alt="office content 1"
+            />
+            <img
+              className="mt-4 w-full rounded-lg lg:mt-10"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+              alt="office content 2"
+            />
+          </div>
+          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              Free to Start, Boundless Opportunities
+            </h2>
+            <p className="mb-4">
+              Dive in without any upfront costs. Our platform is built on the
+              belief that your creativity should be your only investment. Earn a
+              competitive commission on every sale as your creations capture the
+              market.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className="grid">
+        <div className="block bg-white dark:bg-neutral-700">
+          <div className="relative overflow-hidden bg-cover bg-no-repeat">
+            <img src="/bg.png" alt="" height="300" />
+          </div>
           <div
             style={{
-              display: "grid",
-              gridTemplateRows: "1fr 2fr",
-              justifyItems: "center",
-              height: "100px",
+              backgroundColor: "white",
             }}
+            className="p-6"
           >
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: "600",
-              }}
-            >
-              Merchlife
-            </span>
             <div
               style={{
-                fontSize: "1.5rem",
-                fontWeight: "600",
-                lineHeight: "3.2rem",
-                color: "hsla(0,0%,100%,.79)",
                 textAlign: "center",
               }}
             >
-              Free, curated AI images and prompts for creative projects
+              <h2 className="mb-2 pb-4 text-5xl font-bold leading-tight text-neutral-950">
+                How it works: Create, Connect, Succeed
+              </h2>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr 1fr",
+                gap: "24px",
+              }}
+              className="text-neutral-700"
+            >
+              <div className="bg-card rounded-xl">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img className="rounded-t-lg" src="/create.jpg" alt="" />
+                </div>
+                <div className="p-6">
+                  <h3 className="p-6 text-center text-2xl font-medium tracking-tight">
+                    Create
+                  </h3>
+
+                  <div className="text-lg">
+                    Let your imagination run wild. Our platform is your canvas
+                    for next-level product designs.
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card rounded-xl">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img className="rounded-t-lg" src="/connect.jpg" alt="" />
+                </div>
+                <div className="p-6 ">
+                  <h3 className="p-6 text-center text-2xl font-medium tracking-tight">
+                    Connect
+                  </h3>
+
+                  <div className="text-lg">
+                    Leverage the power of social media. Share your story and
+                    products with a global audience.
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card rounded-xl">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img className="rounded-t-lg" src="/succeed.jpg" alt="" />
+                </div>
+                <div className="p-6">
+                  <h3 className="p-6 text-center text-2xl font-medium tracking-tight">
+                    Succeed
+                  </h3>
+
+                  <div className="text-lg">
+                    Enjoy the satisfaction of each sale. Grow your brand and
+                    income as your fanbase expands.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <Input
-            isClearable
-            radius="lg"
-            classNames={{
-              label: "text-black/50 dark:text-white/90",
-              input: [
-                "bg-transparent",
-                "text-black/90 dark:text-white/90",
-                "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-              ],
-              innerWrapper: "bg-transparent",
-              inputWrapper: [
-                "shadow-xl",
-                "bg-default-200/50",
-                "dark:bg-default/60",
-                "backdrop-blur-xl",
-                "backdrop-saturate-200",
-                "hover:bg-default-200/70",
-                "dark:hover:bg-default/70",
-                "group-data-[focused=true]:bg-default-200/50",
-                "dark:group-data-[focused=true]:bg-default/60",
-                "!cursor-text",
-              ],
-            }}
-            placeholder="Type to search..."
-            startContent={
-              <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
-            }
-          />
         </div>
       </div>
-    </main>
+      <section className="bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-screen-xl items-center px-4 py-8 lg:px-6 lg:py-16">
+          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              Support Every Step of the Way
+            </h2>
+            <p className="mb-4">
+              Whether you need creative guidance or technical support, our teams
+              are here to ensure a smooth, enjoyable experience. From concept to
+              customer, we&apos;re with you at every step.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
