@@ -64,7 +64,7 @@ export default function One() {
         name: "6 PMers Black T-shirt 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1Obn4bGkWb1Ap7UJVQ3wrAWN",
+        priceId: "price_1Or4zaGkWb1Ap7UJVbF2IQPF",
         url: "/product_two.jpg",
       };
     }
