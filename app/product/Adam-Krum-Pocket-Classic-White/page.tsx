@@ -16,6 +16,7 @@ import { CustomCheckbox } from "@/app/components/customCheckbox.tsx/customCheckb
 import { AddCart } from "@/app/components/addCart/addCart";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import { useState } from "react";
+import { Gallery } from "@/app/components/gallery/gallery";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -25,7 +26,7 @@ export default function One() {
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
-        name: "Adam Krum Pocket Classic White M",
+        name: "Adam Krum Classic White M",
         quantity: quantity,
         size: "M",
         priceId: "price_1OpWZpGkWb1Ap7UJROQHcd7I",
@@ -34,7 +35,7 @@ export default function One() {
     }
     if (selected[0] === "l") {
       return {
-        name: "Adam Krum Pocket Classic White L",
+        name: "Adam Krum Classic White L",
         quantity: quantity,
         size: "L",
         priceId: "price_1OpWaOGkWb1Ap7UJqePVBkcV",
@@ -43,7 +44,7 @@ export default function One() {
     }
     if (selected[0] === "xl") {
       return {
-        name: "Adam Krum Pocket Classic White XL",
+        name: "Adam Krum Classic White XL",
         quantity: quantity,
         size: "XL",
         priceId: "price_1OpWarGkWb1Ap7UJloSpNNjD",
@@ -52,7 +53,7 @@ export default function One() {
     }
     if (selected[0] === "2xl") {
       return {
-        name: "Adam Krum Pocket Classic White 2XL",
+        name: "Adam Krum Classic White 2XL",
         quantity: quantity,
         size: "2XL",
         priceId: "price_1OpWbJGkWb1Ap7UJcTjmTDSL",
@@ -61,7 +62,7 @@ export default function One() {
     }
     if (selected[0] === "3xl") {
       return {
-        name: "Adam Krum Pocket Classic White 3XL",
+        name: "Adam Krum Classic White 3XL",
         quantity: quantity,
         size: "3XL",
         priceId: "price_1OpWbjGkWb1Ap7UJo0ipOOrH",
@@ -70,7 +71,7 @@ export default function One() {
     }
     if (selected[0] === "4xl") {
       return {
-        name: "Adam Krum Pocket Classic White 4XL",
+        name: "Adam Krum Classic White 4XL",
         quantity: quantity,
         size: "4XL",
         priceId: "price_1OpWc7GkWb1Ap7UJmF4Hmkce",
@@ -79,7 +80,7 @@ export default function One() {
     }
     if (selected[0] === "5xl") {
       return {
-        name: "Adam Krum Pocket Classic White 5XL",
+        name: "Adam Krum Classic White 5XL",
         quantity: quantity,
         size: "5XL",
         priceId: "price_1OpWcZGkWb1Ap7UJfBVsuRKY",
@@ -87,13 +88,14 @@ export default function One() {
       };
     }
     return {
-      name: "Adam Krum Pocket Classic White S",
+      name: "Adam Krum Classic White S",
       quantity: quantity,
       size: "S",
       priceId: "price_1OpWd1GkWb1Ap7UJEk26Aj4A",
       url: "/adam/classicLogoWhite.jpg",
     };
   };
+  const data = ["/adam/classicLogoWhite.jpg", "/adam/classicLogoWhiteB.jpg"];
 
   return (
     <>
@@ -111,12 +113,11 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/adam/classicLogoWhite.jpg" width="350" />
+          <Gallery list={data} defaultValue="/adam/classicLogoWhite.jpg" />
+
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">
-                Adam Krum Pocket Classic White
-              </div>
+              <div className="text-xl col-span-3">Adam Krum Classic White</div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

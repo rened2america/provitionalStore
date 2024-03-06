@@ -16,6 +16,7 @@ import { CustomCheckbox } from "@/app/components/customCheckbox.tsx/customCheckb
 import { AddCart } from "@/app/components/addCart/addCart";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import { useState } from "react";
+import { Gallery } from "@/app/components/gallery/gallery";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -25,7 +26,7 @@ export default function One() {
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
-        name: "Adam Krum Pocket Guitar White M",
+        name: "Adam Krum Guitar White M",
         quantity: quantity,
         size: "M",
         priceId: "price_1OpWePGkWb1Ap7UJ8HFC0zg4",
@@ -34,7 +35,7 @@ export default function One() {
     }
     if (selected[0] === "l") {
       return {
-        name: "Adam Krum Pocket Guitar White L",
+        name: "Adam Krum Guitar White L",
         quantity: quantity,
         size: "L",
         priceId: "price_1OpWerGkWb1Ap7UJiSSb78CG",
@@ -43,7 +44,7 @@ export default function One() {
     }
     if (selected[0] === "xl") {
       return {
-        name: "Adam Krum Pocket Guitar White XL",
+        name: "Adam Krum Guitar White XL",
         quantity: quantity,
         size: "XL",
         priceId: "price_1OpWfHGkWb1Ap7UJf8gMzqDA",
@@ -52,7 +53,7 @@ export default function One() {
     }
     if (selected[0] === "2xl") {
       return {
-        name: "Adam Krum Pocket Guitar White 2XL",
+        name: "Adam Krum Guitar White 2XL",
         quantity: quantity,
         size: "2XL",
         priceId: "price_1OpWfhGkWb1Ap7UJe8TKxcNz",
@@ -61,7 +62,7 @@ export default function One() {
     }
     if (selected[0] === "3xl") {
       return {
-        name: "Adam Krum Pocket Guitar White 3XL",
+        name: "Adam Krum Guitar White 3XL",
         quantity: quantity,
         size: "3XL",
         priceId: "price_1OpWgBGkWb1Ap7UJEQOvYHf7",
@@ -70,7 +71,7 @@ export default function One() {
     }
     if (selected[0] === "4xl") {
       return {
-        name: "Adam Krum Pocket Guitar White 4XL",
+        name: "Adam Krum Guitar White 4XL",
         quantity: quantity,
         size: "4XL",
         priceId: "price_1OpWgfGkWb1Ap7UJwYcDU0MY",
@@ -79,7 +80,7 @@ export default function One() {
     }
     if (selected[0] === "5xl") {
       return {
-        name: "Adam Krum Pocket Guitar White 5XL",
+        name: "Adam Krum Guitar White 5XL",
         quantity: quantity,
         size: "5XL",
         priceId: "price_1OpWhBGkWb1Ap7UJfsESe7Lh",
@@ -87,13 +88,14 @@ export default function One() {
       };
     }
     return {
-      name: "Adam Krum Pocket Guitar White S",
+      name: "Adam Krum Guitar White S",
       quantity: quantity,
       size: "S",
       priceId: "price_1OpWhbGkWb1Ap7UJ2iMdwwex",
       url: "/adam/guitarLogoWhite.jpg",
     };
   };
+  const data = ["/adam/guitarLogoWhite.jpg", "/adam/guitarLogoWhiteB.jpg"];
 
   return (
     <>
@@ -111,12 +113,11 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/adam/guitarLogoWhite.jpg" width="350" />
+          <Gallery list={data} defaultValue="/adam/guitarLogoWhite.jpg" />
+
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">
-                Adam Krum Pocket Guitar White
-              </div>
+              <div className="text-xl col-span-3">Adam Krum Guitar White</div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

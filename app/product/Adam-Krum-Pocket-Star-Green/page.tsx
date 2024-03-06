@@ -16,6 +16,7 @@ import { CustomCheckbox } from "@/app/components/customCheckbox.tsx/customCheckb
 import { AddCart } from "@/app/components/addCart/addCart";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import { useState } from "react";
+import { Gallery } from "@/app/components/gallery/gallery";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -94,6 +95,7 @@ export default function One() {
       url: "/adam/starLogoGreen.jpg",
     };
   };
+  const data = ["/adam/starLogoGreen.jpg", "/adam/starLogoGreenB.jpg"];
 
   return (
     <>
@@ -111,12 +113,10 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/adam/starLogoGreen.jpg" width="350" />
+          <Gallery list={data} defaultValue="/adam/starLogoGreen.jpg" />
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">
-                Adam Krum Pocket Star Green
-              </div>
+              <div className="text-xl col-span-3">Adam Krum Star Green</div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

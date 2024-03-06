@@ -16,6 +16,7 @@ import { CustomCheckbox } from "@/app/components/customCheckbox.tsx/customCheckb
 import { AddCart } from "@/app/components/addCart/addCart";
 import { NavbarHeader } from "@/app/components/navbar/navbar";
 import { useState } from "react";
+import { Gallery } from "@/app/components/gallery/gallery";
 const inter = Inter({ subsets: ["latin"] });
 const interProducts = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -94,6 +95,7 @@ export default function One() {
       url: "/2A/AFEagleWhite.jpg",
     };
   };
+  const data = ["/2A/AFEagleWhite.jpg", "/2A/AFEagleWhiteB.jpg"];
 
   return (
     <>
@@ -111,7 +113,8 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Image src="/2A/AFEagleWhite.jpg" width="350" />
+          <Gallery list={data} defaultValue="/2A/AFEagleWhite.jpg" />
+
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">

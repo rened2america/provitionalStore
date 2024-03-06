@@ -205,7 +205,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic Grey
+                Adam Krum Classic Grey
               </h4>
             </CardFooter>
           </Card>
@@ -237,7 +237,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Star Grey
+                Adam Krum Star Grey
               </h4>
             </CardFooter>
           </Card>
@@ -269,7 +269,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar Grey
+                Adam Krum Guitar Grey
               </h4>
             </CardFooter>
           </Card>
@@ -301,7 +301,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic White
+                Adam Krum Classic White
               </h4>
             </CardFooter>
           </Card>
@@ -333,7 +333,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar White
+                Adam Krum Guitar White
               </h4>
             </CardFooter>
           </Card>
@@ -365,7 +365,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic Green
+                Adam Krum Classic Green
               </h4>
             </CardFooter>
           </Card>
@@ -397,7 +397,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Star Green
+                Adam Krum Star Green
               </h4>
             </CardFooter>
           </Card>
@@ -429,7 +429,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar Green
+                Adam Krum Guitar Green
               </h4>
             </CardFooter>
           </Card>
@@ -461,7 +461,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic Black
+                Adam Krum Classic Black
               </h4>
             </CardFooter>
           </Card>
@@ -493,7 +493,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Star Black
+                Adam Krum Star Black
               </h4>
             </CardFooter>
           </Card>
@@ -525,7 +525,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar Black
+                Adam Krum Guitar Black
               </h4>
             </CardFooter>
           </Card>
@@ -557,7 +557,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Classic Sand
+                Adam Krum Classic Sand
               </h4>
             </CardFooter>
           </Card>
@@ -589,7 +589,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Star Sand
+                Adam Krum Star Sand
               </h4>
             </CardFooter>
           </Card>
@@ -621,7 +621,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Pocket Guitar Sand
+                Adam Krum Guitar Sand
               </h4>
             </CardFooter>
           </Card>
