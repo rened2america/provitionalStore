@@ -23,7 +23,7 @@ export async function Carousel() {
         url: "/adam/classicLogoGrey.jpg",
       },
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Grey",
-      title: "Adam Krum Pocket Classic Grey",
+      title: "Adam Krum Classic Grey",
       priceRange: {
         maxVariantPrice: {
           amount: "24.50",

@@ -68,7 +68,7 @@ export async function ThreeItemGrid() {
       featuredImage: {
         url: "/adam/classicLogoGrey.jpg",
       },
-      title: "Adam Krum Pocket Classic Grey",
+      title: "Adam Krum Classic Grey",
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Grey",
       priceRange: {
         maxVariantPrice: {
@@ -81,7 +81,7 @@ export async function ThreeItemGrid() {
       featuredImage: {
         url: "/adam/classicLogoSand.jpg",
       },
-      title: "Adam Krum Pocket Classic Sand",
+      title: "Adam Krum Classic Sand",
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Sand",
       priceRange: {
         maxVariantPrice: {
