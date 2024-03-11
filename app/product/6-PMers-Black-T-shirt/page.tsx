@@ -106,7 +106,7 @@ export default function One() {
       >
         <div
           style={{
-            width: "90%",
+            width: "80%",
             marginTop: "20px",
           }}
           className="grid grid-cols-2 justify-self-center gap-10"

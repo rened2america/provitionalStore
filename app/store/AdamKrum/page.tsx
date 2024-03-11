@@ -209,7 +209,7 @@ export default function Creators() {
               </h4>
             </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+          {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Star-Grey"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -240,7 +240,7 @@ export default function Creators() {
                 Adam Krum Star Grey
               </h4>
             </CardFooter>
-          </Card>
+          </Card> */}
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Guitar-Grey"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -369,7 +369,7 @@ export default function Creators() {
               </h4>
             </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+          {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Star-Green"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -400,8 +400,8 @@ export default function Creators() {
                 Adam Krum Star Green
               </h4>
             </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+          </Card> */}
+          {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Guitar-Green"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -432,7 +432,7 @@ export default function Creators() {
                 Adam Krum Guitar Green
               </h4>
             </CardFooter>
-          </Card>
+          </Card> */}
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Classic-Black"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -465,7 +465,7 @@ export default function Creators() {
               </h4>
             </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+          {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Star-Black"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -496,7 +496,7 @@ export default function Creators() {
                 Adam Krum Star Black
               </h4>
             </CardFooter>
-          </Card>
+          </Card> */}
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Guitar-Black"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -561,7 +561,7 @@ export default function Creators() {
               </h4>
             </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+          {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Star-Sand"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -592,7 +592,7 @@ export default function Creators() {
                 Adam Krum Star Sand
               </h4>
             </CardFooter>
-          </Card>
+          </Card> */}
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Guitar-Sand"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
