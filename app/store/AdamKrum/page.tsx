@@ -42,7 +42,7 @@ export default function Creators() {
         }}
       >
         <img
-          src="/adam/adamBg.jpeg"
+          src="/adam/ADAMB.png"
           alt=""
           style={{
             width: "100%",
@@ -178,6 +178,102 @@ export default function Creators() {
       >
         <div className="max-w-[900px] gap-2 grid grid-cols-12 px-8 pb-8">
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
+            <Link href={"/product/Adam-Krum-Pocket-Classic-White"}>
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
+                  Go to buy
+                </p>
+              </CardHeader>
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/adam/classicLogoWhite.jpg"
+                />
+              </CardBody>
+            </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                Adam Krum Classic T-shirt White
+              </h4>
+            </CardFooter>
+          </Card>
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+            <Link href={"/product/Adam-Krum-Pocket-Guitar-White"}>
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
+                  Go to buy
+                </p>
+              </CardHeader>
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/adam/guitarLogoWhite.jpg"
+                />
+              </CardBody>
+            </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                Adam Krum Guitar T-shirt White
+              </h4>
+            </CardFooter>
+          </Card>
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+            <Link href={"/product/Adam-Krum-Pocket-Monochrome-Classic-White"}>
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
+                  Go to buy
+                </p>
+              </CardHeader>
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/adam/classicMLogoWhite.png"
+                />
+              </CardBody>
+            </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                Adam Krum Classic Monochrome T-shirt White
+              </h4>
+            </CardFooter>
+          </Card>
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Classic-Grey"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
                 <p
@@ -205,7 +301,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Classic Grey
+                Adam Krum Classic T-shirt Grey
               </h4>
             </CardFooter>
           </Card>
@@ -269,74 +365,11 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Guitar Grey
+                Adam Krum Guitar T-shirt Grey
               </h4>
             </CardFooter>
           </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Classic-White"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/classicLogoWhite.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Classic White
-              </h4>
-            </CardFooter>
-          </Card>
-          <Card className="col-span-12 sm:col-span-4 h-[400px]">
-            <Link href={"/product/Adam-Krum-Pocket-Guitar-White"}>
-              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
-                <p
-                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
-                >
-                  Go to buy
-                </p>
-              </CardHeader>
-              <CardBody className="overflow-visible p-0">
-                <Image
-                  removeWrapper
-                  alt="Card background"
-                  className="z-0 w-full h-full object-cover"
-                  src="/adam/guitarLogoWhite.jpg"
-                />
-              </CardBody>
-            </Link>
-            <CardFooter
-              style={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <h4
-                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
-              >
-                Adam Krum Guitar White
-              </h4>
-            </CardFooter>
-          </Card>
+
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Classic-Green"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -365,7 +398,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Classic Green
+                Adam Krum Classic T-shirt Green
               </h4>
             </CardFooter>
           </Card>
@@ -429,7 +462,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Guitar Green
+                Adam Krum Guitar T-shirt Green
               </h4>
             </CardFooter>
           </Card> */}
@@ -461,10 +494,11 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Classic Black
+                Adam Krum Classic T-shirt Black
               </h4>
             </CardFooter>
           </Card>
+
           {/* <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Star-Black"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -525,10 +559,43 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Guitar Black
+                Adam Krum Guitar T-shirt Black
               </h4>
             </CardFooter>
           </Card>
+          <Card className="col-span-12 sm:col-span-4 h-[400px]">
+            <Link href={"/product/Adam-Krum-Pocket-Monochrome-Classic-Black"}>
+              <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
+                <p
+                  className={`${interProducts.variable} text-slate-900/60 uppercase font-bold text-xs`}
+                >
+                  Go to buy
+                </p>
+              </CardHeader>
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  removeWrapper
+                  alt="Card background"
+                  className="z-0 w-full h-full object-cover"
+                  src="/adam/classicMLogoBlack.jpg"
+                />
+              </CardBody>
+            </Link>
+            <CardFooter
+              style={{
+                display: "grid",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
+            >
+              <h4
+                className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
+              >
+                Adam Krum Classic Monochrome T-shirt Black
+              </h4>
+            </CardFooter>
+          </Card>
+
           <Card className="col-span-12 sm:col-span-4 h-[400px]">
             <Link href={"/product/Adam-Krum-Pocket-Classic-Sand"}>
               <CardHeader className="absolute z-10 flex-col !items-start bg-white/30">
@@ -557,7 +624,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Classic Sand
+                Adam Krum Classic T-shirt Sand
               </h4>
             </CardFooter>
           </Card>
@@ -621,7 +688,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                Adam Krum Guitar Sand
+                Adam Krum Guitar T-shirt Sand
               </h4>
             </CardFooter>
           </Card>

@@ -115,7 +115,7 @@ export default function One() {
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">
-                It&apos;s 6PM Somewhere Black T-shirt
+                It&apos;s 6PM Somewhere T-shirt Black
               </div>
               <div className="text-lg">$24.5</div>
             </div>

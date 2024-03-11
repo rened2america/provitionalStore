@@ -23,7 +23,7 @@ export async function Carousel() {
         url: "/adam/classicLogoGrey.jpg",
       },
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Grey",
-      title: "Adam Krum Classic Grey",
+      title: "Adam Krum Classic T-shirt Grey",
       priceRange: {
         maxVariantPrice: {
           amount: "24.50",
@@ -36,7 +36,7 @@ export async function Carousel() {
         url: "/product_two.jpg",
       },
       urlRedirect: "/product/6-PMers-Black-T-shirt",
-      title: "6 PMers Black T-shirt",
+      title: "6 PMers T-shirt Black",
       priceRange: {
         maxVariantPrice: {
           amount: "24.50",

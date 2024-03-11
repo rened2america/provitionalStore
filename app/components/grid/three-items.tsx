@@ -55,7 +55,7 @@ export async function ThreeItemGrid() {
       featuredImage: {
         url: "/product_two.jpg",
       },
-      title: "6 PMers Black T-shirt",
+      title: "6 PMers T-shirt Black",
       urlRedirect: "/product/6-PMers-Black-T-shirt",
       priceRange: {
         maxVariantPrice: {
@@ -68,7 +68,7 @@ export async function ThreeItemGrid() {
       featuredImage: {
         url: "/adam/classicLogoGrey.jpg",
       },
-      title: "Adam Krum Classic Grey",
+      title: "Adam Krum Classic T-shirt Grey",
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Grey",
       priceRange: {
         maxVariantPrice: {
@@ -81,7 +81,7 @@ export async function ThreeItemGrid() {
       featuredImage: {
         url: "/adam/classicLogoSand.jpg",
       },
-      title: "Adam Krum Classic Sand",
+      title: "Adam Krum Classic T-shirt Sand",
       urlRedirect: "/product/Adam-Krum-Pocket-Classic-Sand",
       priceRange: {
         maxVariantPrice: {

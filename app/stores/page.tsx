@@ -21,14 +21,14 @@ export default function Stores() {
         urlRedirect="/store/The6PMersSwagShop"
       />
       <CartStore
-        urlBg="/adam/adamBg.jpeg"
+        urlBg="/adam/ADAMB.png"
         fUrlImg="/adam/classicLogoGrey.jpg"
         sUrlImg="/adam/classicLogoWhite.jpg"
         tUrlImg="/adam/guitarLogoGreen.jpg"
         urlRedirect="/store/AdamKrum"
       />
       <CartStore
-        urlBg="/2A/2aBg.png"
+        urlBg="/2A/2AFB.png"
         fUrlImg="/2A/2AAfWhite.jpg"
         sUrlImg="/2A/AFEagleWhite.jpg"
         tUrlImg="/2A/2ndAmendmentAFWhite.jpg"

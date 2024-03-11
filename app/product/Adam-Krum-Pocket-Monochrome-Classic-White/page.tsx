@@ -26,76 +26,76 @@ export default function One() {
   const findProduct = () => {
     if (selected[0] === "m") {
       return {
-        name: "American Freedom Eagle White M",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White M",
         quantity: quantity,
         size: "M",
-        priceId: "price_1OoltCGkWb1Ap7UJfBWPbR0y",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBO8GkWb1Ap7UJ14rgtXAY",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "l") {
       return {
-        name: "American Freedom Eagle White L",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White L",
         quantity: quantity,
         size: "L",
-        priceId: "price_1OoluCGkWb1Ap7UJszezKclt",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBOeGkWb1Ap7UJyWe6iR73",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "xl") {
       return {
-        name: "American Freedom Eagle White XL",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White XL",
         quantity: quantity,
         size: "XL",
-        priceId: "price_1OolumGkWb1Ap7UJXoQI1Xfx",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBPHGkWb1Ap7UJo5fhCFgA",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "2xl") {
       return {
-        name: "American Freedom Eagle White 2XL",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White 2XL",
         quantity: quantity,
         size: "2XL",
-        priceId: "price_1OolvLGkWb1Ap7UJCPBp4Win",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBPnGkWb1Ap7UJtjpmGCJM",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "3xl") {
       return {
-        name: "American Freedom Eagle White 3XL",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White 3XL",
         quantity: quantity,
         size: "3XL",
-        priceId: "price_1OolvlGkWb1Ap7UJ1vBPAT7m",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBQpGkWb1Ap7UJQSkPkxU9",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "4xl") {
       return {
-        name: "American Freedom Eagle White 4XL",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White 4XL",
         quantity: quantity,
         size: "4XL",
-        priceId: "price_1OolwLGkWb1Ap7UJVK2159Kb",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBRMGkWb1Ap7UJ5icaslYg",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     if (selected[0] === "5xl") {
       return {
-        name: "American Freedom Eagle White 5XL",
+        name: "Adam Krum Classic Monochrome Logo T-Shirt White 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1Oolx1GkWb1Ap7UJBbOBLdL4",
-        url: "/2A/AFEagleWhite.jpg",
+        priceId: "price_1OtBRwGkWb1Ap7UJ8KggJeNn",
+        url: "/adam/classicMLogoWhite.png",
       };
     }
     return {
-      name: "American Freedom Eagle White S",
+      name: "Adam Krum Classic Monochrome Logo T-Shirt White S",
       quantity: quantity,
       size: "S",
-      priceId: "price_1OolxWGkWb1Ap7UJyYizjRqy",
-      url: "/2A/AFEagleWhite.jpg",
+      priceId: "price_1OtBSaGkWb1Ap7UJVYJ2IlZX",
+      url: "/adam/classicMLogoWhite.png",
     };
   };
-  const data = ["/2A/AFEagleWhite.jpg", "/2A/AFEagleWhiteB.jpg"];
+  const data = ["/adam/classicMLogoWhite.png", "/adam/classicMLogoWhiteB.jpg"];
 
   return (
     <>
@@ -113,12 +113,12 @@ export default function One() {
           }}
           className="grid grid-cols-2 justify-self-center gap-10"
         >
-          <Gallery list={data} defaultValue="/2A/AFEagleWhite.jpg" />
+          <Gallery list={data} defaultValue="/adam/classicMLogoWhite.png" />
 
           <div>
             <div className="grid grid-cols-4">
               <div className="text-xl col-span-3">
-                American Freedom Eagle T-shirt White
+                Adam Krum Classic Monochrome Logo T-Shirt White
               </div>
               <div className="text-lg">$24.5</div>
             </div>

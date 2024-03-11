@@ -114,7 +114,7 @@ export default function One() {
           <Image src="/product_one.jpg" width="350" />
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">Re Social White T-shirt</div>
+              <div className="text-xl col-span-3">Re Social T-shirt White</div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

@@ -204,7 +204,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                6 PMers Black T-shirt
+                6 PMers T-shirt Black
               </h4>
             </CardFooter>
           </Card>
@@ -236,7 +236,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                It&apos;s 6PM Somewhere Black T-shirt
+                It&apos;s 6PM Somewhere T-shirt Black
               </h4>
             </CardFooter>
           </Card>

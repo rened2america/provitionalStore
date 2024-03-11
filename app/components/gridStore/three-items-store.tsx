@@ -91,7 +91,7 @@ export async function ThreeItemGridStores() {
         <ThreeItemGridItemStore
           size="half"
           urlRedirect="/store/AdamKrum"
-          urlImagen={"/adam/adamBg.jpeg"}
+          urlImagen={"/adam/ADAMB.png"}
           products={[
             {
               img: "/adam/classicLogoGrey.jpg",
@@ -110,7 +110,7 @@ export async function ThreeItemGridStores() {
         <ThreeItemGridItemStore
           size="half"
           urlRedirect="/store/2AAmericanFreedom"
-          urlImagen={"/2A/2aBg.png"}
+          urlImagen={"/2A/2AFB.png"}
           products={[
             {
               img: "/2A/2AAfWhite.jpg",
@@ -129,7 +129,7 @@ export async function ThreeItemGridStores() {
         <ThreeItemGridItemStore
           size="half"
           urlRedirect="/store/AdamKrum"
-          urlImagen={"/adam/adamBg.jpeg"}
+          urlImagen={"/adam/ADAMB.png"}
           products={[
             {
               img: "/adam/classicLogoBlack.jpg",

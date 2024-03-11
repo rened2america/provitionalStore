@@ -117,7 +117,9 @@ export default function One() {
 
           <div>
             <div className="grid grid-cols-4">
-              <div className="text-xl col-span-3">Adam Krum Guitar Sand</div>
+              <div className="text-xl col-span-3">
+                Adam Krum Guitar T-shirt Sand
+              </div>
               <div className="text-lg">$24.5</div>
             </div>
             <Divider className="my-4" />

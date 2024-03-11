@@ -42,7 +42,7 @@ export default function Creators() {
         }}
       >
         <img
-          src="/2A/2aBg.png"
+          src="/2A/2AFB.png"
           alt=""
           style={{
             width: "100%",
@@ -237,7 +237,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                American Freedom Eagle White
+                American Freedom Eagle T-shirt White
               </h4>
             </CardFooter>
           </Card>
@@ -269,7 +269,7 @@ export default function Creators() {
               <h4
                 className={`${interProducts.variable} font-sans text-cyan-50 font-medium text-sm`}
               >
-                2nd Amendment American Freedom White
+                2nd Amendment American Freedom T-shirt White
               </h4>
             </CardFooter>
           </Card>

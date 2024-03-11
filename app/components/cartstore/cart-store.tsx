@@ -26,7 +26,7 @@ export const CartStore = ({
         border: "1px solid hsla(0,0%,100%,.07)",
         background: "hsla(0,0%,100%,.1)",
         width: "500px",
-        height: "300px",
+        height: "400px",
       }}
     >
       <Link
@@ -35,7 +35,7 @@ export const CartStore = ({
           position: "relative",
           overflow: "hidden",
           borderRadius: "8px",
-          height: "100px",
+          height: "200px",
         }}
       >
         <figure
