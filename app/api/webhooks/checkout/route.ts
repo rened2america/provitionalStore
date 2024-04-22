@@ -238,6 +238,90 @@ export async function POST(req: Request) {
       };
     }
 
+    //Modificar id
+
+    if (name === "Fitzer Turns 40 Custom Tank Top S") {
+      return {
+        id: "170",
+        size: "00S",
+        name: "Fitzer Turns 40 Custom Tank Top S",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top M") {
+      return {
+        id: "171",
+        size: "00M",
+        name: "Fitzer Turns 40 Custom Tank Top M",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top L") {
+      return {
+        id: "172",
+        size: "00L",
+        name: "Fitzer Turns 40 Custom Tank Top L",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top XL") {
+      return {
+        id: "173",
+        size: "0XL",
+        name: "Fitzer Turns 40 Custom Tank Top XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top 2XL") {
+      return {
+        id: "174",
+        size: "2XL",
+        name: "Fitzer Turns 40 Custom Tank Top 2XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top 3XL") {
+      return {
+        id: "175",
+        size: "3XL",
+        name: "Fitzer Turns 40 Custom Tank Top 3XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top 4XL") {
+      return {
+        id: "176",
+        size: "4XL",
+        name: "Fitzer Turns 40 Custom Tank Top 4XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+    if (name === "Fitzer Turns 40 Custom Tank Top 5XL") {
+      return {
+        id: "177",
+        size: "5XL",
+        name: "Fitzer Turns 40 Custom Tank Top 5XL",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
+
+    if (name === "Fitzer Turns 40 Custom Tank Top 5XL TEST") {
+      return {
+        id: "178",
+        size: "5XL",
+        name: "Fitzer Turns 40 Custom Tank Top 5XL TEST",
+        imgUrl:
+          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+      };
+    }
     const shirtMap: any = {
       "2A AF White S": { id: "25", size: "00S" },
       "2A AF White M": { id: "26", size: "00M" },
