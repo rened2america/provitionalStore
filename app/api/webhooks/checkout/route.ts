@@ -313,15 +313,15 @@ export async function POST(req: Request) {
       };
     }
 
-    if (name === "Fitzer Turns 40 Custom Tank Top 5XL TEST") {
-      return {
-        id: "178",
-        size: "5XL",
-        name: "Fitzer Turns 40 Custom Tank Top 5XL TEST",
-        imgUrl:
-          "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
-      };
-    }
+    // if (name === "Fitzer Turns 40 Custom Tank Top 5XL TEST") {
+    //   return {
+    //     id: "178",
+    //     size: "5XL",
+    //     name: "Fitzer Turns 40 Custom Tank Top 5XL TEST",
+    //     imgUrl:
+    //       "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+    //   };
+    // }
     const shirtMap: any = {
       "2A AF White S": { id: "25", size: "00S" },
       "2A AF White M": { id: "26", size: "00M" },

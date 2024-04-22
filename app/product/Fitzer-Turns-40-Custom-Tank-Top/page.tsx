@@ -78,24 +78,24 @@ export default function One() {
         url: "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
       };
     }
-    // if (selected[0] === "5xl") {
-    //   return {
-    //     name: "Fitzer Turns 40 Custom Tank Top 5XL",
-    //     quantity: quantity,
-    //     size: "5XL",
-    //     priceId: "price_1P8TkYGkWb1Ap7UJJhRRUKjB",
-    //     url: "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
-    //   };
-    // }
     if (selected[0] === "5xl") {
       return {
-        name: "Fitzer Turns 40 Custom Tank Top 5XL TEST",
+        name: "Fitzer Turns 40 Custom Tank Top 5XL",
         quantity: quantity,
         size: "5XL",
-        priceId: "price_1P8TuVGkWb1Ap7UJZwZNUWWV",
+        priceId: "price_1P8TkYGkWb1Ap7UJJhRRUKjB",
         url: "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
       };
     }
+    // if (selected[0] === "5xl") {
+    //   return {
+    //     name: "Fitzer Turns 40 Custom Tank Top 5XL TEST",
+    //     quantity: quantity,
+    //     size: "5XL",
+    //     priceId: "price_1P8TuVGkWb1Ap7UJZwZNUWWV",
+    //     url: "https://politicozen-prod.s3.us-east-2.amazonaws.com/pocket.png",
+    //   };
+    // }
     return {
       name: "Fitzer Turns 40 Custom Tank Top S",
       quantity: quantity,
